@@ -1,0 +1,16 @@
+# VSCODE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# SYSTEM
+.DS_STORE
+
+# PROJECT
+*.log
+build
+docs
+node_modules
+test_results
