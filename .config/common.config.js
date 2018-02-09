@@ -159,7 +159,7 @@ module.exports = {
     contentBase: path.join(process.cwd(), 'build'),
     compress: true,
     host: '0.0.0.0',
-    port: 9200,
+    port: 9201,
     noInfo: true,
     disableHostCheck: true,
     historyApiFallback: true,

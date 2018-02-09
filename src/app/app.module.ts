@@ -18,6 +18,7 @@ import {
 
 import { AppComponent } from './app.component';
 import { APP_ROUTES, APP_ROUTING_PROVIDERS } from './app.routing';
+import { TreeModule } from './tree/tree.module';
 
 @NgModule({
 
@@ -35,6 +36,7 @@ import { APP_ROUTES, APP_ROUTING_PROVIDERS } from './app.routing';
 
     /* FÖRETAGARE */
     RouterModule.forRoot(APP_ROUTES),
+    TreeModule,
   ],
 
   declarations: [
