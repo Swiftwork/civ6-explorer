@@ -42,4 +42,6 @@ export const ForeignTrade = new TreeNode(
   'Discover a second continent'
 );
 
-
+Civics.push(
+  CodeOfLaws, Craftsmanship, ForeignTrade
+)

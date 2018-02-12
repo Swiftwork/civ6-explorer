@@ -2,6 +2,18 @@
   <h1>Civics</h1>
 </header>
 
-<svg>
-
+<svg class="tree">
+  <g class="node"
+    [attr.transform]="transform((256 + 64) * i, 0, 0)"
+    *ngFor="let node of nodes; let i = index">
+    <rect x="0"
+      y="0"
+      width="256"
+      height="48"></rect>
+    <text x="12"
+      y="32"
+      font-family="Verdana"
+      font-size="24"
+      fill="black">{{node.title}}</text>
+  </g>
 </svg>
