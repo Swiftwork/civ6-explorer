@@ -14,7 +14,7 @@ export class TreeComponent implements OnInit {
   @ViewChild('treeRef') treeRef: ElementRef;
 
   public nodes: TreeNode[] = Civics;
-  public jsonCivics: TreeNode[];
+  public jsonCivics: TreeNode[] = [];
 
   private treeRows = 8;
   private treeHeight = 0;
@@ -29,7 +29,8 @@ export class TreeComponent implements OnInit {
       console.log('civics from json', data);
 
       for (let i = 0; i < data.GameInfo.Civics.Row.length; i++) {
-        let civicrow = data.GameInfo.Civics.Row[i] as ICivicRow;
+        let civicrow = data.GameInfo.Civics.Row[i].$ as ICivicRow;
+        console.log(i, civicrow);
         this.jsonCivics.push(new TreeNode(
           civicrow.CivicType,
           civicrow.Name,
@@ -42,7 +43,6 @@ export class TreeComponent implements OnInit {
           'Boost',
           false,
         ));
-        console.log(i);
       }
       console.log('civics parsed', this.jsonCivics);
     });
