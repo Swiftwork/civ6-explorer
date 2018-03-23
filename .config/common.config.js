@@ -129,6 +129,9 @@ module.exports = {
       },
       xhtml: true,
     }),
+    new CopyWebpackPlugin([
+      { from: 'assets/data/**' },
+    ]),
     new CommonsChunkPlugin({
       name: [
         'inline'

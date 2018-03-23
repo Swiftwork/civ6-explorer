@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Civics } from '../data/civics';
-import { TreeNode } from '../models/node.model';
+import { TreeNode } from '../models/tree-node.model';
 
 @Component({
   selector: 'x-tree',
   templateUrl: './tree.component.html',
-  styleUrls: ['./tree.component.css']
+  styleUrls: ['./tree.component.css'],
 })
 export class TreeComponent implements OnInit {
 
