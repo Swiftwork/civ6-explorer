@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Civics } from '../data/civics';
-import { TreeNode } from '../models/tree-node.model';
+import { Era, TreeNode } from '../models/tree-node.model';
 import { XmlReader } from '../services/xmlreader';
 
 @Component({
@@ -13,6 +13,8 @@ export class TreeComponent implements OnInit {
 
   public nodes: TreeNode[] = Civics;
 
+  private rows = 9;
+
   constructor(private xmlReader: XmlReader) { }
 
   ngOnInit() {
@@ -23,8 +25,7 @@ export class TreeComponent implements OnInit {
     console.log('civics', civicsJson);
   }
 
-  public transform(x = 0, y = 0, z = 0, deg = 0) {
-    return `translate(${x}, ${y})` + (deg > 0 ? `rotate()` : '');
+  public layout(row: number, cost: number, era: Era) {
   }
 
 }
