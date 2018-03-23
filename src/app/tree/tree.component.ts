@@ -15,6 +15,7 @@ export class TreeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('hej erik');
   }
 
   public transform(x = 0, y = 0, z = 0, deg = 0) {
