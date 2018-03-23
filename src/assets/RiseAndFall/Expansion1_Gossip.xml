@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+<GameInfo>
+	<Types>
+		<Row Type="GOSSIP_SPY_FOMENT_UNREST" Kind="KIND_GOSSIP"/>
+		<Row Type="GOSSIP_SPY_NEUTRALIZE_GOVERNOR" Kind="KIND_GOSSIP"/>
+	</Types>
+	<DiplomaticVisibilitySources>
+		<Row VisibilitySourceType="SOURCE_TRADING_POST_TRAIT" Description="LOC_VIZSOURCE_TRADING_POST_TRAIT" ActionDescription="LOC_VIZSOURCE_ACTION_TRADING_POST_TRAIT" GossipString="LOC_GOSSIP_SOURCE_VENDOR"/>
+	</DiplomaticVisibilitySources>
+	<DiplomaticVisibilitySources_XP1>
+		<Row VisibilitySourceType="SOURCE_TRADING_POST_TRAIT" TradePostTrait="TRAIT_CIVILIZATION_MONGOLIAN_ORTOO"/>
+	</DiplomaticVisibilitySources_XP1>
+	<Gossips>
+		<Row GossipType="GOSSIP_SPY_FOMENT_UNREST" VisibilityLevel="3" Message="LOC_GOSSIP_FOMENT_UNREST"/>
+		<Row GossipType="GOSSIP_SPY_NEUTRALIZE_GOVERNOR" VisibilityLevel="3" Message="LOC_GOSSIP_NEUTRALIZE_GOVERNOR"/>
+	</Gossips>
+</GameInfo>

@@ -1,0 +1,2543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+<GameInfo>
+	<Types>
+		<!-- New-->
+		<Row Type="LEADER_CHANDRAGUPTA" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_GENGHIS_KHAN" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_LAUTARO" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_POUNDMAKER" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_ROBERT_THE_BRUCE" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_SEONDEOK" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_SHAKA" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_TAMAR" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_WILHELMINA" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_MINOR_CIV_ANTIOCH" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_MINOR_CIV_BABYLON" Kind="KIND_LEADER"/>
+		<Row Type="LEADER_FREE_CITIES" Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_AMABUTHO" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_ARTHASHASTRA" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_BANNOCKBURN" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_HWARANG" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_RELIGION_CITY_STATES" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_FREE_CITIES" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_ALLIANCE_AND_TRADE" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_AGGRESSIVE_MILITARY" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_RADIO_ORANJE" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_LAUTARO_ABILITY" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_GENGHIS_KHAN_ABILITY" Kind="KIND_TRAIT"/>
+		<Row Type="MINOR_CIV_ANTIOCH_TRAIT" Kind="KIND_TRAIT"/>
+		<Row Type="MINOR_CIV_BABYLON_TRAIT" Kind="KIND_TRAIT"/>
+		<Row Type="MINOR_CIV_CARTHAGE_TRAIT" Kind="KIND_TRAIT"/>
+		<Row Type="MINOR_CIV_JERUSALEM_TRAIT" Kind="KIND_TRAIT"/>
+		<Row Type="MINOR_CIV_PRESLAV_TRAIT" Kind="KIND_TRAIT"/>
+		<Row Type="MINOR_CIV_STOCKHOLM_TRAIT" Kind="KIND_TRAIT"/>
+		<Row Type="MINOR_CIV_VILNIUS_TRAIT" Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<Row LeaderType="LEADER_CHANDRAGUPTA" Name="LOC_LEADER_CHANDRAGUPTA_NAME" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+		<Row LeaderType="LEADER_GENGHIS_KHAN" Name="LOC_LEADER_GENGHIS_KHAN_NAME" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+		<Row LeaderType="LEADER_LAUTARO" Name="LOC_LEADER_LAUTARO_NAME" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+		<Row LeaderType="LEADER_POUNDMAKER" Name="LOC_LEADER_POUNDMAKER_NAME" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+		<Row LeaderType="LEADER_ROBERT_THE_BRUCE" Name="LOC_LEADER_ROBERT_THE_BRUCE_NAME" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+		<Row LeaderType="LEADER_SEONDEOK" Name="LOC_LEADER_SEONDEOK_NAME" Sex="Female" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+		<Row LeaderType="LEADER_SHAKA" Name="LOC_LEADER_SHAKA_NAME" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+		<Row LeaderType="LEADER_TAMAR" Name="LOC_LEADER_TAMAR_NAME" Sex="Female" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+		<Row LeaderType="LEADER_WILHELMINA" Name="LOC_LEADER_WILHELMINA_NAME" Sex="Female" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+		<Row LeaderType="LEADER_MINOR_CIV_ANTIOCH" Name="LOC_CIVILIZATION_ANTIOCH_NAME" Sex="LEADER_MINOR_CIV_TRADE" InheritFrom="LEADER_MINOR_CIV_TRADE"/>
+		<Row LeaderType="LEADER_MINOR_CIV_BABYLON" Name="LOC_CIVILIZATION_BABYLON_NAME" Sex="LEADER_MINOR_CIV_SCIENTIFIC" InheritFrom="LEADER_MINOR_CIV_SCIENTIFIC"/>
+		<Row LeaderType="LEADER_FREE_CITIES" Name="LOC_LEADER_FREE_CITIES_NAME" OperationList="Free Cities Operations"/>
+	</Leaders>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_CHANDRAGUPTA" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_CHANDRAGUPTA_QUOTE" QuoteAudio="INDI_CH_MISC_PEP_TALK_A_2"/>
+		<Row LeaderType="LEADER_GENGHIS_KHAN" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_GENGHIS_KHAN_QUOTE" QuoteAudio="MONG_GE_MISC_PEP_TALK_A_1"/>
+		<Row LeaderType="LEADER_LAUTARO" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_LAUTARO_QUOTE" QuoteAudio="MAPU_LA_MISC_PEP_TALK_B_3"/>
+		<Row LeaderType="LEADER_POUNDMAKER" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_POUNDMAKER_QUOTE" QuoteAudio="CREE_PO_MISC_PEP_TALK_A_2"/>
+		<Row LeaderType="LEADER_ROBERT_THE_BRUCE" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_ROBERT_THE_BRUCE_QUOTE" QuoteAudio="SCOT_RO_MISC_PEP_TALK_A_4"/>
+		<Row LeaderType="LEADER_SEONDEOK" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_SEONDEOK_QUOTE" QuoteAudio="KORE_SE_MISC_PEP_TALK_B"/>
+		<Row LeaderType="LEADER_SHAKA" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_SHAKA_QUOTE" QuoteAudio="ZULU_SH_MISC_PEP_TALK_A_1"/>
+		<Row LeaderType="LEADER_TAMAR" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_TAMAR_QUOTE" QuoteAudio="GEOR_TA_MISC_PEP_TALK_B_1"/>
+		<Row LeaderType="LEADER_WILHELMINA" Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_WILHELMINA_QUOTE" QuoteAudio="NETH_WI_MISC_PEP_TALK_B_1"/>
+	</LeaderQuotes>
+	<LeaderTraits>
+		<Row LeaderType="LEADER_CHANDRAGUPTA" TraitType="TRAIT_LEADER_ARTHASHASTRA"/>
+		<Row LeaderType="LEADER_ROBERT_THE_BRUCE" TraitType="TRAIT_LEADER_BANNOCKBURN"/>
+		<Row LeaderType="LEADER_SEONDEOK" TraitType="TRAIT_LEADER_HWARANG"/>
+		<Row LeaderType="LEADER_SEONDEOK" TraitType="TRAIT_LEADER_LOW_RELIGIOUS_PREFERENCE"/>
+		<Row LeaderType="LEADER_SHAKA" TraitType="TRAIT_LEADER_AMABUTHO"/>
+		<Row LeaderType="LEADER_SHAKA" TraitType="TRAIT_LEADER_LOW_RELIGIOUS_PREFERENCE"/>
+		<Row LeaderType="LEADER_SHAKA" TraitType="TRAIT_LEADER_AGGRESSIVE_MILITARY"/>
+		<Row LeaderType="LEADER_TAMAR" TraitType="TRAIT_LEADER_RELIGION_CITY_STATES"/>
+		<Row LeaderType="LEADER_FREE_CITIES" TraitType="TRAIT_LEADER_FREE_CITIES"/>
+		<Row LeaderType="LEADER_POUNDMAKER" TraitType="TRAIT_LEADER_ALLIANCE_AND_TRADE"/>
+		<Row LeaderType="LEADER_WILHELMINA" TraitType="TRAIT_RADIO_ORANJE"/>
+		<Row LeaderType="LEADER_LAUTARO" TraitType="TRAIT_LEADER_LAUTARO_ABILITY"/>
+		<Row LeaderType="LEADER_LAUTARO" TraitType="TRAIT_LEADER_LOW_RELIGIOUS_PREFERENCE"/>
+		<Row LeaderType="LEADER_GENGHIS_KHAN" TraitType="TRAIT_LEADER_GENGHIS_KHAN_ABILITY"/>
+		<Row LeaderType="LEADER_GENGHIS_KHAN" TraitType="TRAIT_LEADER_LOW_RELIGIOUS_PREFERENCE"/>
+		<Row LeaderType="LEADER_GENGHIS_KHAN" TraitType="TRAIT_LEADER_AGGRESSIVE_MILITARY"/>
+		<Row LeaderType="LEADER_MINOR_CIV_ANTIOCH" TraitType="MINOR_CIV_ANTIOCH_TRAIT"/>
+		<Row LeaderType="LEADER_MINOR_CIV_BABYLON" TraitType="MINOR_CIV_BABYLON_TRAIT"/>
+		<Row LeaderType="LEADER_MINOR_CIV_CARTHAGE" TraitType="MINOR_CIV_CARTHAGE_TRAIT"/>
+		<Row LeaderType="LEADER_MINOR_CIV_JERUSALEM" TraitType="MINOR_CIV_JERUSALEM_TRAIT"/>
+		<Row LeaderType="LEADER_MINOR_CIV_PRESLAV" TraitType="MINOR_CIV_PRESLAV_TRAIT"/>
+		<Row LeaderType="LEADER_MINOR_CIV_STOCKHOLM" TraitType="MINOR_CIV_STOCKHOLM_TRAIT"/>
+		<Row LeaderType="LEADER_MINOR_CIV_VILNIUS" TraitType="MINOR_CIV_VILNIUS_TRAIT"/>
+	</LeaderTraits>
+	<!-- AI alterations for leaders (not for agendas) -->
+	<PlotEvalConditions>
+		<Row ConditionType="Cultural Pressure" Value="11"/>
+	</PlotEvalConditions>
+	<AiListTypes>
+		<Row ListType="LiberationWarriorList"/>
+		<Row ListType="ProtectorateWarriorList"/>
+		<Row ListType="TerritorialWarriorList"/>
+		<!-- Unimplemented abilities -->
+		<Row ListType="GenghisKhanCavalryLoverList"/>
+		<Row ListType="WilhelminaEmergencyAllianceList"/>
+		<!-- Free Cities Specific -->
+		<Row ListType="FreeCitiesTactics"/>
+		<Row ListType="FreeCitiesHomeland"/>
+		<Row ListType="FreeCitiesOperationLimits"/>
+		<Row ListType="FreeCitiesCityBuilds"/>
+		<!-- Militaristic trait (Shaka and Genghis) -->
+		<Row ListType="AgressiveDiplomacy"/>
+		<Row ListType="AggressivePseudoYields"/>
+		<!-- Victory Strategy Additions -->
+		<Row ListType="CultureVictoryFavoredCommemorations"/>
+		<Row ListType="MilitaryVictoryFavoredCommemorations"/>
+		<Row ListType="ReligiousVictoryFavoredCommemorations"/>
+		<Row ListType="ScienceVictoryFavoredCommemorations"/>
+		<!-- Leaders-->
+		<Row ListType="ChandraguptaCivics"/>
+		<Row ListType="ChandraguptaTechs"/>
+		<Row ListType="ChandraguptaWonders"/>
+		<Row ListType="LautaroCivics"/>
+		<Row ListType="LautaroTechs"/>
+		<Row ListType="LautaroWonders"/>
+		<Row ListType="ShakaCivics"/>
+		<Row ListType="ShakaTechs"/>
+		<Row ListType="ShakaWonders"/>
+		<Row ListType="GenghisCivics"/>
+		<Row ListType="GenghisTechs"/>
+		<Row ListType="GenghisWonders"/>
+		<Row ListType="WilhelminaCivics"/>
+		<Row ListType="WilhelminaTechs"/>
+		<Row ListType="WilhelminaWonders"/>
+		<Row ListType="RobertCivics"/>
+		<Row ListType="RobertTechs"/>
+		<Row ListType="RobertWonders"/>
+		<Row ListType="TamarCivics"/>
+		<Row ListType="TamarTechs"/>
+		<Row ListType="TamarWonders"/>
+		<Row ListType="PoundmakerCivics"/>
+		<Row ListType="PoundmakerTechs"/>
+		<Row ListType="PoundmakerWonders"/>
+		<Row ListType="SeondeokCivics"/>
+		<Row ListType="SeondeokTechs"/>
+		<Row ListType="SeondeokWonders"/>
+	</AiListTypes>
+	<AiLists>
+		<Row ListType="TerritorialWarriorList" LeaderType="TRAIT_LEADER_ARTHASHASTRA" System="DiplomaticActions"/>
+		<Row ListType="LiberationWarriorList" LeaderType="TRAIT_LEADER_BANNOCKBURN" System="DiplomaticActions"/>
+		<Row ListType="ProtectorateWarriorList" LeaderType="TRAIT_LEADER_RELIGION_CITY_STATES" System="DiplomaticActions"/>
+		<!-- Unimplemented abilities -->
+		<Row ListType="GenghisKhanCavalryLoverList" LeaderType="TRAIT_LEADER_GENGHIS_KHAN_ABILITY" System="UnitPromotionClasses"/>
+		<Row ListType="CavalryLoverCitySettlement" LeaderType="TRAIT_LEADER_GENGHIS_KHAN_ABILITY" System="PlotEvaluations"/>
+		<Row ListType="WilhelminaEmergencyAllianceList" LeaderType="TRAIT_RADIO_ORANJE" System="DiplomaticActions"/>
+		<!-- Free Cities Specific -->
+		<Row ListType="FreeCitiesTactics" LeaderType="TRAIT_LEADER_FREE_CITIES" System="Tactics"/>
+		<Row ListType="FreeCitiesHomeland" LeaderType="TRAIT_LEADER_FREE_CITIES" System="Homeland"/>
+		<Row ListType="FreeCitiesOperationLimits" LeaderType="TRAIT_LEADER_FREE_CITIES" System="AiOperationTypes"/>
+		<Row ListType="FreeCitiesCityBuilds" LeaderType="TRAIT_LEADER_FREE_CITIES" System="CityEvents"/>
+		<!-- Militaristic trait (Shaka and Genghis) -->
+		<Row ListType="AgressiveDiplomacy" LeaderType="TRAIT_LEADER_AGGRESSIVE_MILITARY" System="DiplomaticActions"/>
+		<Row ListType="AggressivePseudoYields" LeaderType="TRAIT_LEADER_AGGRESSIVE_MILITARY" System="PseudoYields"/>
+		<!-- Victory Strategy Additions -->
+		<Row ListType="CultureVictoryFavoredCommemorations" System="Commemorations"/>
+		<Row ListType="MilitaryVictoryFavoredCommemorations" System="Commemorations"/>
+		<Row ListType="ReligiousVictoryFavoredCommemorations" System="Commemorations"/>
+		<Row ListType="ScienceVictoryFavoredCommemorations" System="Commemorations"/>
+		<!-- Leaders-->
+		<Row ListType="ChandraguptaCivics" LeaderType="TRAIT_LEADER_ARTHASHASTRA" System="Civics"/>
+		<Row ListType="ChandraguptaTechs" LeaderType="TRAIT_LEADER_ARTHASHASTRA" System="Technologies"/>
+		<Row ListType="ChandraguptaWonders" LeaderType="TRAIT_LEADER_ARTHASHASTRA" System="Buildings"/>
+		<Row ListType="LautaroCivics" LeaderType="TRAIT_LEADER_LAUTARO_ABILITY" System="Civics"/>
+		<Row ListType="LautaroTechs" LeaderType="TRAIT_LEADER_LAUTARO_ABILITY" System="Technologies"/>
+		<Row ListType="LautaroWonders" LeaderType="TRAIT_LEADER_LAUTARO_ABILITY" System="Buildings"/>
+		<Row ListType="ShakaCivics" LeaderType="TRAIT_LEADER_AMABUTHO" System="Civics"/>
+		<Row ListType="ShakaTechs" LeaderType="TRAIT_LEADER_AMABUTHO" System="Technologies"/>
+		<Row ListType="ShakaWonders" LeaderType="TRAIT_LEADER_AMABUTHO" System="Buildings"/>
+		<Row ListType="GenghisCivics" LeaderType="TRAIT_LEADER_GENGHIS_KHAN_ABILITY" System="Civics"/>
+		<Row ListType="GenghisTechs" LeaderType="TRAIT_LEADER_GENGHIS_KHAN_ABILITY" System="Technologies"/>
+		<Row ListType="GenghisWonders" LeaderType="TRAIT_LEADER_GENGHIS_KHAN_ABILITY" System="Buildings"/>
+		<Row ListType="WilhelminaCivics" LeaderType="TRAIT_RADIO_ORANJE" System="Civics"/>
+		<Row ListType="WilhelminaTechs" LeaderType="TRAIT_RADIO_ORANJE" System="Technologies"/>
+		<Row ListType="WilhelminaWonders" LeaderType="TRAIT_RADIO_ORANJE" System="Buildings"/>
+		<Row ListType="RobertCivics" LeaderType="TRAIT_LEADER_BANNOCKBURN" System="Civics"/>
+		<Row ListType="RobertTechs" LeaderType="TRAIT_LEADER_BANNOCKBURN" System="Technologies"/>
+		<Row ListType="RobertWonders" LeaderType="TRAIT_LEADER_BANNOCKBURN" System="Buildings"/>
+		<Row ListType="TamarCivics" LeaderType="TRAIT_LEADER_RELIGION_CITY_STATES" System="Civics"/>
+		<Row ListType="TamarTechs" LeaderType="TRAIT_LEADER_RELIGION_CITY_STATES" System="Technologies"/>
+		<Row ListType="TamarWonders" LeaderType="TRAIT_LEADER_RELIGION_CITY_STATES" System="Buildings"/>
+		<Row ListType="PoundmakerCivics" LeaderType="TRAIT_LEADER_ALLIANCE_AND_TRADE" System="Civics"/>
+		<Row ListType="PoundmakerTechs" LeaderType="TRAIT_LEADER_ALLIANCE_AND_TRADE" System="Technologies"/>
+		<Row ListType="PoundmakerWonders" LeaderType="TRAIT_LEADER_ALLIANCE_AND_TRADE" System="Buildings"/>
+		<Row ListType="SeondeokCivics" LeaderType="TRAIT_LEADER_HWARANG" System="Civics"/>
+		<Row ListType="SeondeokTechs" LeaderType="TRAIT_LEADER_HWARANG" System="Technologies"/>
+		<Row ListType="SeondeokWonders" LeaderType="TRAIT_LEADER_HWARANG" System="Buildings"/>
+	</AiLists>
+	<AiFavoredItems>
+		<Row ListType="LiberationWarriorList" Item="DIPLOACTION_DECLARE_LIBERATION_WAR" Favored="true"/>
+		<Row ListType="ProtectorateWarriorList" Item="DIPLOACTION_DECLARE_PROTECTORATE_WAR" Favored="true"/>
+		<Row ListType="TerritorialWarriorList" Item="DIPLOACTION_DECLARE_TERRITORIAL_WAR" Favored="true"/>
+		<!-- Unimplemented abilities -->
+		<Row ListType="GenghisKhanCavalryLoverList" Item="PROMOTION_CLASS_HEAVY_CAVALRY" Value="100"/>
+		<Row ListType="GenghisKhanCavalryLoverList" Item="PROMOTION_CLASS_LIGHT_CAVALRY" Value="100"/>
+		<Row ListType="WilhelminaEmergencyAllianceList" Item="DIPLOACTION_ALLIANCE_MILITARY_EMERGENCY(NOT_IN_YET)" Favored="true"/>
+		<!-- Add to existing lists (government district, mostly) -->
+		<Row ListType="MinorCivDistricts" Item="DISTRICT_GOVERNMENT" Favored="false"/>
+		<Row ListType="MinorCivDistricts" Item="DISTRICT_WATER_ENTERTAINMENT_COMPLEX" Favored="false"/>
+		<Row ListType="StandardSettlePlot" Item="Cultural Pressure" Favored="false" Value="1"/>
+		<Row ListType="StandardSettlePlot" Item="Cultural Pressure" Favored="true" Value="-6"/>
+		<!-- Free Cities Specific -->
+		<Row ListType="FreeCitiesTactics" Item="Attack High Priority"/>
+		<Row ListType="FreeCitiesTactics" Item="Attack Medium Priority"/>
+		<Row ListType="FreeCitiesTactics" Item="Move to Safety"/>
+		<Row ListType="FreeCitiesTactics" Item="Attack Low Priority"/>
+		<Row ListType="FreeCitiesTactics" Item="Wander Near Camp"/>
+		<Row ListType="FreeCitiesHomeland" Item="End Turn"/>
+		<Row ListType="FreeCitiesOperationLimits" Item="CITY_ASSAULT" Value="10"/>
+		<Row ListType="FreeCitiesCityBuilds" Item="CITY_EVENT_DEFAULT" StringVal="Simple City Tree"/>
+		<!-- Militaristic trait (Shaka and Genghis) -->
+		<Row ListType="AgressiveDiplomacy" Item="DIPLOACTION_DENOUNCE" Favored="True"/>
+		<Row ListType="AggressivePseudoYields" Item="PSEUDOYIELD_UNIT_COMBAT" Value="25"/>
+		<Row ListType="AggressivePseudoYields" Item="PSEUDOYIELD_UNIT_NAVAL_COMBAT" Value="25"/>
+		<Row ListType="AggressivePseudoYields" Item="PSEUDOYIELD_UNIT_AIR_COMBAT" Value="25"/>
+		<Row ListType="AggressivePseudoYields" Item="PSEUDOYIELD_CITY_BASE" Value="40"/>
+		<Row ListType="AggressivePseudoYields" Item="PSEUDOYIELD_CITY_DEFENDING_UNITS" Value="-10"/>
+		<!-- Victory Strategy Additions -->
+		<Row ListType="CultureVictoryFavoredCommemorations" Item="COMMEMORATION_CULTURAL" Favored="true"/>
+		<Row ListType="CultureVictoryFavoredCommemorations" Item="COMMEMORATION_ECONOMIC" Favored="true"/>
+		<Row ListType="CultureVictoryFavoredCommemorations" Item="COMMEMORATION_TOURISM" Favored="true"/>
+		<Row ListType="MilitaryVictoryFavoredCommemorations" Item="COMMEMORATION_INDUSTRIAL" Favored="true"/>
+		<Row ListType="MilitaryVictoryFavoredCommemorations" Item="COMMEMORATION_INFRASTRUCTURE" Favored="true"/>
+		<Row ListType="MilitaryVictoryFavoredCommemorations" Item="COMMEMORATION_MILITARY" Favored="true"/>
+		<Row ListType="ReligiousVictoryFavoredCommemorations" Item="COMMEMORATION_ESPIONAGE" Favored="true"/>
+		<Row ListType="ReligiousVictoryFavoredCommemorations" Item="COMMEMORATION_INFRASTRUCTURE" Favored="true"/>
+		<Row ListType="ReligiousVictoryFavoredCommemorations" Item="COMMEMORATION_RELIGIOUS" Favored="true"/>
+		<Row ListType="ScienceVictoryFavoredCommemorations" Item="COMMEMORATION_AERONAUTICAL" Favored="true"/>
+		<Row ListType="ScienceVictoryFavoredCommemorations" Item="COMMEMORATION_ECONOMIC" Favored="true"/>
+		<Row ListType="ScienceVictoryFavoredCommemorations" Item="COMMEMORATION_SCIENTIFIC" Favored="true"/>
+		<!-- Leaders-->
+		<Row ListType="ChandraguptaCivics" Item="CIVIC_FEUDALISM" Favored="true"/>
+		<Row ListType="ChandraguptaCivics" Item="CIVIC_PROFESSIONAL_SPORTS" Favored="true"/>
+		<Row ListType="ChandraguptaCivics" Item="CIVIC_MILITARY_TRAINING" Favored="true"/>
+		<Row ListType="ChandraguptaCivics" Item="CIVIC_MILITARY_TRADITION" Favored="true"/>
+		<Row ListType="ChandraguptaTechs" Item="TECH_SANITATION" Favored="true"/>
+		<Row ListType="ChandraguptaTechs" Item="TECH_HORSEBACK_RIDING" Favored="true"/>
+		<Row ListType="ChandraguptaTechs" Item="TECH_CONSTRUCTION" Favored="true"/>
+		<Row ListType="ChandraguptaWonders" Item="BUILDING_KOTOKU_IN" Favored="true"/>
+		<Row ListType="LautaroCivics" Item="CIVIC_CRAFTSMANSHIP" Favored="true"/>
+		<Row ListType="LautaroCivics" Item="CIVIC_STATE_WORKFORCE" Favored="true"/>
+		<Row ListType="LautaroCivics" Item="CIVIC_REFORMED_CHURCH" Favored="true"/>
+		<Row ListType="LautaroCivics" Item="CIVIC_CLASS_STRUGGLE" Favored="true"/>
+		<Row ListType="LautaroTechs" Item="TECH_FLIGHT" Favored="true"/>
+		<Row ListType="LautaroTechs" Item="TECH_GUNPOWDER" Favored="true"/>
+		<Row ListType="LautaroWonders" Item="BUILDING_EIFFEL_TOWER" Favored="true"/>
+		<Row ListType="LautaroWonders" Item="BUILDING_CASA_DE_CONTRATACION" Favored="true"/>
+		<Row ListType="ShakaCivics" Item="CIVIC_MERCENARIES" Favored="true"/>
+		<Row ListType="ShakaCivics" Item="CIVIC_NATIONALISM" Favored="true"/>
+		<Row ListType="ShakaCivics" Item="CIVIC_FEUDALISM" Favored="true"/>
+		<Row ListType="ShakaCivics" Item="CIVIC_MILITARY_TRADITION" Favored="true"/>
+		<Row ListType="ShakaTechs" Item="TECH_BRONZE_WORKING" Favored="true"/>
+		<Row ListType="ShakaTechs" Item="TECH_MILITARY_TACTICS" Favored="true"/>
+		<Row ListType="ShakaTechs" Item="TECH_MILITARY_ENGINEERING" Favored="true"/>
+		<Row ListType="ShakaTechs" Item="TECH_MILITARY_SCIENCE" Favored="true"/>
+		<Row ListType="ShakaWonders" Item="BUILDING_TERRACOTTA_ARMY" Favored="true"/>
+		<Row ListType="GenghisCivics" Item="CIVIC_FOREIGN_TRADE" Favored="true"/>
+		<Row ListType="GenghisCivics" Item="CIVIC_DIVINE_RIGHT" Favored="true"/>
+		<Row ListType="GenghisTechs" Item="TECH_STIRRUPS" Favored="true"/>
+		<Row ListType="GenghisTechs" Item="TECH_PRINTING" Favored="true"/>
+		<Row ListType="GenghisTechs" Item="TECH_HORSEBACK_RIDING" Favored="true"/>
+		<Row ListType="GenghisTechs" Item="TECH_BRONZE_WORKING" Favored="true"/>
+		<Row ListType="GenghisTechs" Item="TECH_SALING" Favored="false"/>
+		<Row ListType="GenghisTechs" Item="TECH_CELESTIAL_NAVIGATION" Favored="false"/>
+		<Row ListType="GenghisTechs" Item="TECH_SHIPBUILDING" Favored="false"/>
+		<Row ListType="WilhelminaCivics" Item="CIVIC_GUILDS" Favored="true"/>
+		<Row ListType="WilhelminaCivics" Item="CIVIC_FOREIGN_TRADE" Favored="true"/>
+		<Row ListType="WilhelminaCivics" Item="CIVIC_CIVIL_ENGINEERING" Favored="true"/>
+		<Row ListType="WilhelminaTechs" Item="TECH_CELESTIAL_NAVIGATION" Favored="true"/>
+		<Row ListType="WilhelminaTechs" Item="TECH_SQUARE_RIGGING" Favored="true"/>
+		<Row ListType="WilhelminaTechs" Item="TECH_REPLACEABLE_PARTS" Favored="true"/>
+		<Row ListType="WilhelminaTechs" Item="TECH_ELECTRICITY" Favored="true"/>
+		<Row ListType="WilhelminaTechs" Item="TECH_MASS_PRODUCTION" Favored="true"/>
+		<Row ListType="WilhelminaWonders" Item="BUILDING_GREAT_ZIMBABWE" Favored="true"/>
+		<Row ListType="WilhelminaWonders" Item="BUILDING_COLOSSUS" Favored="true"/>
+		<Row ListType="RobertCivics" Item="CIVIC_GAMES_RECREATION" Favored="true"/>
+		<Row ListType="RobertCivics" Item="CIVIC_DEFENSIVE_TACTICS" Favored="true"/>
+		<Row ListType="RobertCivics" Item="CIVIC_REFORMED_CHURCH" Favored="true"/>
+		<Row ListType="RobertCivics" Item="CIVIC_GLOBALIZATION" Favored="true"/>
+		<Row ListType="RobertTechs" Item="TECH_WRITING" Favored="true"/>
+		<Row ListType="RobertTechs" Item="TECH_APPRENTICESHIP" Favored="true"/>
+		<Row ListType="RobertTechs" Item="TECH_RIFLING" Favored="true"/>
+		<Row ListType="RobertTechs" Item="TECH_FLIGHT" Favored="true"/>
+		<Row ListType="RobertWonders" Item="BUILDING_COLOSSEUM" Favored="true"/>
+		<Row ListType="RobertWonders" Item="BUILDING_ESTADIO_DO_MARACANA" Favored="true"/>
+		<Row ListType="RobertWonders" Item="BUILDING_TEMPLE_ARTEMIS" Favored="true"/>
+		<Row ListType="RobertWonders" Item="BUILDING_ALHAMBRA" Favored="true"/>
+		<Row ListType="TamarCivics" Item="CIVIC_DEFENSIVE_TACTICS" Favored="true"/>
+		<Row ListType="TamarCivics" Item="CIVIC_DIVINE_RIGHT" Favored="true"/>
+		<Row ListType="TamarTechs" Item="TECH_MASONRY" Favored="true"/>
+		<Row ListType="TamarTechs" Item="TECH_CASTLES" Favored="true"/>
+		<Row ListType="TamarTechs" Item="TECH_SIEGE_TACTICS" Favored="true"/>
+		<Row ListType="TamarTechs" Item="TECH_MILITARY_TACTICS" Favored="true"/>
+		<Row ListType="TamarWonders" Item="BUILDING_KILWA_KISIWANI" Favored="true"/>
+		<Row ListType="TamarWonders" Item="BUILDING_TAJ_MAHAL" Favored="true"/>
+		<Row ListType="PoundmakerCivics" Item="CIVIC_CONSERVATION" Favored="true"/>
+		<Row ListType="PoundmakerCivics" Item="CIVIC_CIVIL_SERVICE" Favored="true"/>
+		<Row ListType="PoundmakerCivics" Item="CIVIC_DIPLOMATIC_SERVICE" Favored="true"/>
+		<Row ListType="PoundmakerCivics" Item="CIVIC_SUFFRAGE" Favored="true"/>
+		<Row ListType="PoundmakerTechs" Item="TECH_POTTERY" Favored="true"/>
+		<Row ListType="PoundmakerTechs" Item="TECH_ANIMAL_HUSBANDRY" Favored="true"/>
+		<Row ListType="PoundmakerWonders" Item="BUILDING_GREAT_ZIMBABWE" Favored="true"/>
+		<Row ListType="PoundmakerWonders" Item="BUILDING_COLOSSUS" Favored="true"/>
+		<Row ListType="SeondeokCivics" Item="CIVIC_FEUDALISM" Favored="true"/>
+		<Row ListType="SeondeokTechs" Item="TECH_WRITING" Favored="true"/>
+		<Row ListType="SeondeokTechs" Item="TECH_EDUCATION" Favored="true"/>
+		<Row ListType="SeondeokTechs" Item="TECH_MINING" Favored="true"/>
+		<Row ListType="SeondeokTechs" Item="TECH_GUNPOWDER" Favored="true"/>
+		<Row ListType="SeondeokTechs" Item="TECH_APPRENTICESHIP" Favored="true"/>
+		<Row ListType="SeondeokTechs" Item="TECH_INDUSTRIALIZATION" Favored="true"/>
+		<Row ListType="SeondeokTechs" Item="TECH_REPLACEABLE_PARTS" Favored="true"/>
+		<Row ListType="SeondeokWonders" Item="BUILDING_GREAT_LIBRARY" Favored="true"/>
+		<Row ListType="SeondeokWonders" Item="BUILDING_OXFORD_UNIVERSITY" Favored="true"/>
+		<Row ListType="SeondeokWonders" Item="BUILDING_CASA_DE_CONTRATACION" Favored="true"/>
+	</AiFavoredItems>
+	<Agendas>
+		<Row AgendaType="AGENDA_BILLIONAIRE" Name="LOC_AGENDA_BILLIONAIRE_NAME" Description="LOC_AGENDA_BILLIONAIRE_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_CHEOMSEONGDAE" Name="LOC_AGENDA_CHEOMSEONGDAE_NAME" Description="LOC_AGENDA_CHEOMSEONGDAE_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_FLOWER_OF_SCOTLAND" Name="LOC_AGENDA_FLOWER_OF_SCOTLAND_NAME" Description="LOC_AGENDA_FLOWER_OF_SCOTLAND_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_HORSE_LORD" Name="LOC_AGENDA_HORSE_LORD_NAME" Description="LOC_AGENDA_HORSE_LORD_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_HORN_CHEST_LOINS" Name="LOC_AGENDA_HORN_CHEST_LOINS_NAME" Description="LOC_AGENDA_HORN_CHEST_LOINS_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_IRON_CONFEDERACY" Name="LOC_AGENDA_IRON_CONFEDERACY_NAME" Description="LOC_AGENDA_IRON_CONFEDERACY_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_MAURYA_EMPIRE" Name="LOC_AGENDA_MAURYA_EMPIRE_NAME" Description="LOC_AGENDA_MAURYA_EMPIRE_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_NARIKALA_FORTRESS" Name="LOC_AGENDA_NARIKALA_FORTRESS_NAME" Description="LOC_AGENDA_NARIKALA_FORTRESS_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_SPIRIT_OF_TUCAPEL" Name="LOC_AGENDA_SPIRIT_OF_TUCAPEL_NAME" Description="LOC_AGENDA_SPIRIT_OF_TUCAPEL_DESCRIPTION"/>
+	</Agendas>
+	<HistoricalAgendas>
+		<Row LeaderType="LEADER_CHANDRAGUPTA" AgendaType="AGENDA_MAURYA_EMPIRE"/>
+		<Row LeaderType="LEADER_GENGHIS_KHAN" AgendaType="AGENDA_HORSE_LORD"/>
+		<Row LeaderType="LEADER_LAUTARO" AgendaType="AGENDA_SPIRIT_OF_TUCAPEL"/>
+		<Row LeaderType="LEADER_POUNDMAKER" AgendaType="AGENDA_IRON_CONFEDERACY"/>
+		<Row LeaderType="LEADER_ROBERT_THE_BRUCE" AgendaType="AGENDA_FLOWER_OF_SCOTLAND"/>
+		<Row LeaderType="LEADER_SEONDEOK" AgendaType="AGENDA_CHEOMSEONGDAE"/>
+		<Row LeaderType="LEADER_SHAKA" AgendaType="AGENDA_HORN_CHEST_LOINS"/>
+		<Row LeaderType="LEADER_TAMAR" AgendaType="AGENDA_NARIKALA_FORTRESS"/>
+		<Row LeaderType="LEADER_WILHELMINA" AgendaType="AGENDA_BILLIONAIRE"/>
+	</HistoricalAgendas>
+	<!-- Some new AI operations, hopefully limited to just the free cities player -->
+	<AiTeams>
+		<Row TeamName="Free Cities Assault Force"/>
+	</AiTeams>
+	<AiOperationTeams>
+		<Row TeamName="Free Cities Assault Force" OperationName="Free Cities Raid" InitialStrengthAdvantage="-40" OngoingStrengthAdvantage="0"/>
+	</AiOperationTeams>
+	<OpTeamRequirements>
+		<Row TeamName="Free Cities Assault Force" AiType="UNITAI_COMBAT" MinNumber="2" MaxNumber="6"/>
+	</OpTeamRequirements>
+	<AiOperationDefs>
+		<Row OperationName="Free Cities Raid" TargetType="TARGET_ENEMY_COMBAT_DISTRICT" OperationType="CITY_ASSAULT" EnemyType="WAR" BehaviorTree="Free Cities Assault" Priority="3" SelfStart="false" MaxTargetDistInRegion="-1" MaxTargetDistInArea="-1" MinOddsOfSuccess="0"/>
+	</AiOperationDefs>
+	<Strategy_Priorities>
+		<Row StrategyType="VICTORY_STRATEGY_CULTURAL_VICTORY" ListType="CultureVictoryFavoredCommemorations"/>
+		<Row StrategyType="VICTORY_STRATEGY_MILITARY_VICTORY" ListType="MilitaryVictoryFavoredCommemorations"/>
+		<Row StrategyType="VICTORY_STRATEGY_RELIGIOUS_VICTORY" ListType="ReligiousVictoryFavoredCommemorations"/>
+		<Row StrategyType="VICTORY_STRATEGY_SCIENCE_VICTORY" ListType="ScienceVictoryFavoredCommemorations"/>
+	</Strategy_Priorities>
+	<AiOperationLists>
+		<Row ListType="Free Cities Operations"/>
+	</AiOperationLists>
+	<AllowedOperations>
+		<Row ListType="Free Cities Operations" OperationDef="Free Cities Raid"/>
+	</AllowedOperations>
+	<Traits>
+		<Row TraitType="TRAIT_LEADER_AMABUTHO" Name="LOC_TRAIT_LEADER_AMABUTHO_NAME" Description="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_ARTHASHASTRA" Name="LOC_TRAIT_LEADER_ARTHASHASTRA_NAME" Description="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_BANNOCKBURN" Name="LOC_TRAIT_LEADER_BANNOCKBURN_NAME" Description="LOC_TRAIT_LEADER_BANNOCKBURN_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_HWARANG" Name="LOC_TRAIT_LEADER_HWARANG_NAME" Description="LOC_TRAIT_LEADER_HWARANG_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_RELIGION_CITY_STATES" Name="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_NAME" Description="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_FREE_CITIES" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_LEADER_ALLIANCE_AND_TRADE" Name="LOC_LEADER_POUNDMAKER_ABILITY_NAME" Description="LOC_LEADER_POUNDMAKER_ABILITY_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_AGGRESSIVE_MILITARY" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER" InternalOnly="true"/>
+		<Row TraitType="TRAIT_RADIO_ORANJE" Name="LOC_TRAIT_RADIO_ORANJE_NAME" Description="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_LAUTARO_ABILITY" Name="LOC_TRAIT_LEADER_LAUTARO_ABILITY_NAME" Description="LOC_TRAIT_LEADER_LAUTARO_ABILITY_DESCRIPTION_ALT"/>
+		<Row TraitType="TRAIT_LEADER_GENGHIS_KHAN_ABILITY" Name="LOC_TRAIT_LEADER_GENGHIS_KHAN_ABILITY_NAME" Description="LOC_TRAIT_LEADER_GENGHIS_KHAN_ABILITY_DESCRIPTION"/>
+		<Row TraitType="MINOR_CIV_ANTIOCH_TRAIT" Name="LOC_LEADER_TRAIT_ANTIOCH_NAME" Description="LOC_LEADER_TRAIT_ANTIOCH_DESCRIPTION"/>
+		<Row TraitType="MINOR_CIV_BABYLON_TRAIT" Name="LOC_LEADER_TRAIT_BABYLON_NAME" Description="LOC_LEADER_TRAIT_BABYLON_DESCRIPTION"/>
+		<Row TraitType="MINOR_CIV_CARTHAGE_TRAIT" Name="LOC_LEADER_TRAIT_CARTHAGE_NAME" Description="LOC_LEADER_TRAIT_CARTHAGE_DESCRIPTION"/>
+		<Row TraitType="MINOR_CIV_JERUSALEM_TRAIT" Name="LOC_LEADER_TRAIT_JERUSALEM_NAME_EXPANSION" Description="LOC_LEADER_TRAIT_JERUSALEM_DESCRIPTION_EXPANSION"/>
+		<Row TraitType="MINOR_CIV_PRESLAV_TRAIT" Name="LOC_LEADER_TRAIT_PRESLAV_NAME" Description="LOC_LEADER_TRAIT_PRESLAV_DESCRIPTION"/>
+		<Row TraitType="MINOR_CIV_STOCKHOLM_TRAIT" Name="LOC_LEADER_TRAIT_STOCKHOLM_NAME" Description="LOC_LEADER_TRAIT_STOCKHOLM_DESCRIPTION"/>
+		<Row TraitType="MINOR_CIV_VILNIUS_TRAIT" Name="LOC_LEADER_TRAIT_VILNIUS_NAME" Description="LOC_LEADER_TRAIT_VILNIUS_DESCRIPTION"/>
+		<Update>
+			<Set Description="LOC_TRAIT_LEADER_MEDITERRANEAN_EXPANSION1_DESCRIPTION"/>
+			<Where TraitType="TRAIT_LEADER_MEDITERRANEAN"/>
+		</Update>
+		<Update>
+			<Set Description="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION"/>
+			<Where TraitType="TRAIT_LEADER_ADVENTURES_ENKIDU"/>
+		</Update>
+	</Traits>
+	<TraitModifiers>
+		<Delete TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="STANDARD_DIPLOMATIC_CLOSE_TO_VICTORY"/>
+		<Delete TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="HIGH_DIFFICULTY_FREE_TECH_BOOSTS"/>
+		<Delete TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="HIGH_DIFFICULTY_FREE_CIVIC_BOOSTS"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="GOLDEN_AGE_CITY_IDENTITY"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="DARK_AGE_CITY_IDENTITY"/>
+    <Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="LOW_DIFFICULTY_HUMAN_MARTIAL_LAW"/>
+    <Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="HIGH_DIFFICULTY_HUMAN_MARTIAL_LAW"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="TRAIT_DELTA_DIPLO_VISIBILITY_COMBAT_MODIFIER"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="STANDARD_DIPLOMATIC_BROKEN_PLEDGE"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="STANDARD_DIPLOMATIC_KEPT_PLEDGE"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="STANDARD_DIPLOMATIC_NO_PLEDGE"/>
+		<Row TraitType="TRAIT_LEADER_MAJOR_CIV" ModifierId="STANDARD_DIPLOMATIC_SHARED_EMERGENCY"/>
+		<Row TraitType="TRAIT_LEADER_AMABUTHO" ModifierId="TRAIT_LAND_CORPS_EARLY"/>
+		<Row TraitType="TRAIT_LEADER_AMABUTHO" ModifierId="TRAIT_LAND_ARMIES_EARLY"/>
+		<Row TraitType="TRAIT_LEADER_AMABUTHO" ModifierId="TRAIT_LAND_CORPS_COMBAT_STRENGTH"/>
+		<Row TraitType="TRAIT_LEADER_AMABUTHO" ModifierId="TRAIT_LAND_ARMIES_COMBAT_STRENGTH"/>
+		<Row TraitType="TRAIT_LEADER_ARTHASHASTRA" ModifierId="TRAIT_TERRITORIAL_WAR_COMBAT"/>
+		<Row TraitType="TRAIT_LEADER_ARTHASHASTRA" ModifierId="TRAIT_TERRITORIAL_WAR_MOVEMENT"/>
+		<Row TraitType="TRAIT_LEADER_ARTHASHASTRA" ModifierId="TRAIT_TERRITORIAL_WAR_PREREQ_OVERRIDE"/>
+		<Row TraitType="TRAIT_LEADER_BANNOCKBURN" ModifierId="TRAIT_LIBERATION_WAR_PRODUCTION"/>
+		<Row TraitType="TRAIT_LEADER_BANNOCKBURN" ModifierId="TRAIT_LIBERATION_WAR_MOVEMENT"/>
+		<Row TraitType="TRAIT_LEADER_BANNOCKBURN" ModifierId="TRAIT_LIBERATION_WAR_PREREQ_OVERRIDE"/>
+		<Row TraitType="TRAIT_LEADER_HWARANG" ModifierId="TRAIT_ADJUST_CITY_CULTURE_MODIFIER"/>
+		<Row TraitType="TRAIT_LEADER_HWARANG" ModifierId="TRAIT_ADJUST_CITY_SCIENCE_MODIFIER"/>
+		<Row TraitType="TRAIT_LEADER_RELIGION_CITY_STATES" ModifierId="TRAIT_PROTECTORATE_WAR_FAITH"/>
+		<Row TraitType="TRAIT_LEADER_RELIGION_CITY_STATES" ModifierId="TRAIT_CITY_STATE_TOKEN_SAME_RELIGION"/>
+		<Row TraitType="TRAIT_LEADER_ALLIANCE_AND_TRADE" ModifierId="TRAIT_ALLIANCE_SHARED_VIS"/>
+		<Row TraitType="TRAIT_LEADER_ALLIANCE_AND_TRADE" ModifierId="TRAIT_TRADE_FOOD_FROM_CAMPS"/>
+		<Row TraitType="TRAIT_LEADER_ALLIANCE_AND_TRADE" ModifierId="TRAIT_TRADE_GOLD_FROM_CAMPS"/>
+		<Row TraitType="TRAIT_LEADER_ALLIANCE_AND_TRADE" ModifierId="TRAIT_TRADE_FOOD_FROM_PASTURES"/>
+		<Row TraitType="TRAIT_LEADER_ALLIANCE_AND_TRADE" ModifierId="TRAIT_TRADE_GOLD_FROM_PASTURES"/>
+		<Row TraitType="TRAIT_RADIO_ORANJE" ModifierId="TRAIT_IDENTITY_FROM_DOMESTIC_TRADE_ROUTES"/>
+		<Row TraitType="TRAIT_RADIO_ORANJE" ModifierId="TRAIT_CULTURE_FROM_INTERNATIONAL_TRADE_ROUTES"/>
+		<Row TraitType="TRAIT_RADIO_ORANJE" ModifierId="TRAIT_CULTURE_FROM_INCOMING_TRADE_ROUTES"/>
+		<Row TraitType="TRAIT_LEADER_LAUTARO_ABILITY" ModifierId="TRAIT_DIMINISH_LOYALTY_IN_ENEMY_CITY"/>
+		<Row TraitType="TRAIT_LEADER_GENGHIS_KHAN_ABILITY" ModifierId="TRAIT_COMBAT_BONUS_FOR_CAVALRY"/>
+		<Row TraitType="TRAIT_LEADER_GENGHIS_KHAN_ABILITY" ModifierId="TRAIT_CAVALRY_CAPTURE_CAVALRY"/>
+		<Row TraitType="TRAIT_LEADER_ADVENTURES_ENKIDU" ModifierId="TRAIT_ALLIANCE_POINTS_FROM_COMMON_FOE"/>
+		<Row TraitType="TRAIT_LEADER_MEDITERRANEAN" ModifierId="TRAIT_ALLIANCE_POINTS_FROM_TRADE"/>
+		<Row TraitType="MINOR_CIV_SCIENTIFIC_TRAIT" ModifierId="MINOR_CIV_SCIENTIFIC_MEDIUM_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_SCIENTIFIC_TRAIT" ModifierId="MINOR_CIV_SCIENTIFIC_LARGE_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_RELIGIOUS_TRAIT" ModifierId="MINOR_CIV_RELIGIOUS_MEDIUM_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_RELIGIOUS_TRAIT" ModifierId="MINOR_CIV_RELIGIOUS_LARGE_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_TRADE_TRAIT" ModifierId="MINOR_CIV_TRADE_MEDIUM_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_TRADE_TRAIT" ModifierId="MINOR_CIV_TRADE_LARGE_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_CULTURAL_TRAIT" ModifierId="MINOR_CIV_CULTURAL_MEDIUM_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_CULTURAL_TRAIT" ModifierId="MINOR_CIV_CULTURAL_LARGE_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_CULTURAL_TRAIT" ModifierId="MINOR_CIV_CULTURAL_LARGE_INFLUENCE_BONUS_ARTIFACT"/>
+		<Row TraitType="MINOR_CIV_MILITARISTIC_TRAIT" ModifierId="MINOR_CIV_MILITARISTIC_MEDIUM_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_MILITARISTIC_TRAIT" ModifierId="MINOR_CIV_MILITARISTIC_LARGE_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_INDUSTRIAL_TRAIT" ModifierId="MINOR_CIV_INDUSTRIAL_MEDIUM_INFLUENCE_BONUS_BUILDING"/>
+		<Row TraitType="MINOR_CIV_INDUSTRIAL_TRAIT" ModifierId="MINOR_CIV_INDUSTRIAL_MEDIUM_INFLUENCE_BONUS_DISTRICT"/>
+		<Row TraitType="MINOR_CIV_INDUSTRIAL_TRAIT" ModifierId="MINOR_CIV_INDUSTRIAL_LARGE_INFLUENCE_BONUS_BUILDING"/>
+		<Row TraitType="MINOR_CIV_INDUSTRIAL_TRAIT" ModifierId="MINOR_CIV_INDUSTRIAL_LARGE_INFLUENCE_BONUS_DISTRICT"/>
+		<Row TraitType="MINOR_CIV_ANTIOCH_TRAIT" ModifierId="MINOR_CIV_ANTIOCH_UNIQUE_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_CARTHAGE_TRAIT" ModifierId="MINOR_CIV_CARTHAGE_UNIQUE_INFLUENCE_BARRACKS_STABLE_PURCHASE_BONUS"/>
+		<Row TraitType="MINOR_CIV_CARTHAGE_TRAIT" ModifierId="MINOR_CIV_CARTHAGE_UNIQUE_INFLUENCE_ARMORY_PURCHASE_BONUS"/>
+		<Row TraitType="MINOR_CIV_CARTHAGE_TRAIT" ModifierId="MINOR_CIV_CARTHAGE_UNIQUE_INFLUENCE_MILITARY_ACADEMY_PURCHASE_BONUS"/>
+		<Row TraitType="MINOR_CIV_BABYLON_TRAIT" ModifierId="MINOR_CIV_BABYLON_WRITING_BONUS"/>
+		<Row TraitType="MINOR_CIV_BABYLON_TRAIT" ModifierId="MINOR_CIV_BABYLON_ARTIFACT_BONUS"/>
+		<Row TraitType="MINOR_CIV_BABYLON_TRAIT" ModifierId="MINOR_CIV_BABYLON_RELIC_BONUS"/>
+		<Row TraitType="MINOR_CIV_JERUSALEM_TRAIT" ModifierId="MINOR_CIV_JERUSALEM_UNIQUE_INFLUENCE_BONUS"/>
+		<Row TraitType="MINOR_CIV_PRESLAV_TRAIT" ModifierId="MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_BARRACKS_STABLE_IDENTITY_BONUS"/>
+		<Row TraitType="MINOR_CIV_PRESLAV_TRAIT" ModifierId="MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_ARMORY_IDENTITY_BONUS"/>
+		<Row TraitType="MINOR_CIV_PRESLAV_TRAIT" ModifierId="MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_MILITARY_ACADEMY_IDENTITY_BONUS"/>
+		<Row TraitType="MINOR_CIV_STOCKHOLM_TRAIT" ModifierId="MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_GENERAL_POINTS_BONUS"/>
+		<Row TraitType="MINOR_CIV_STOCKHOLM_TRAIT" ModifierId="MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_ADMIRAL_POINTS_BONUS"/>
+		<Row TraitType="MINOR_CIV_STOCKHOLM_TRAIT" ModifierId="MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_ENGINEER_POINTS_BONUS"/>
+		<Row TraitType="MINOR_CIV_STOCKHOLM_TRAIT" ModifierId="MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_MERCHANT_POINTS_BONUS"/>
+		<Row TraitType="MINOR_CIV_STOCKHOLM_TRAIT" ModifierId="MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_PROPHET_POINTS_BONUS"/>
+		<Row TraitType="MINOR_CIV_STOCKHOLM_TRAIT" ModifierId="MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_SCIENTIST_POINTS_BONUS"/>
+		<Row TraitType="MINOR_CIV_STOCKHOLM_TRAIT" ModifierId="MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_WRITER_POINTS_BONUS"/>
+		<Row TraitType="MINOR_CIV_STOCKHOLM_TRAIT" ModifierId="MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_ARTIST_POINTS_BONUS"/>
+		<Row TraitType="MINOR_CIV_STOCKHOLM_TRAIT" ModifierId="MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_MUSICIAN_POINTS_BONUS"/>
+		<Row TraitType="MINOR_CIV_VILNIUS_TRAIT" ModifierId="MINOR_CIV_VILNIUS_UNIQUE_INFLUENCE_ALLIANCE_LEVEL_1"/>
+		<Row TraitType="MINOR_CIV_VILNIUS_TRAIT" ModifierId="MINOR_CIV_VILNIUS_UNIQUE_INFLUENCE_ALLIANCE_LEVEL_2"/>
+		<Row TraitType="MINOR_CIV_VILNIUS_TRAIT" ModifierId="MINOR_CIV_VILNIUS_UNIQUE_INFLUENCE_ALLIANCE_LEVEL_3"/>
+	</TraitModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>GOLDEN_AGE_CITY_IDENTITY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_IDENTITY_PER_CITIZEN</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_GOLDEN_AGE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>DARK_AGE_CITY_IDENTITY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_IDENTITY_PER_CITIZEN</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_DARK_AGE</SubjectRequirementSetId>
+		</Row>
+    <Row>
+      <ModifierId>LOW_DIFFICULTY_HUMAN_MARTIAL_LAW</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_LOYALTY_ADJUST_MARTIAL_LAW_MODIFIER</ModifierType>
+      <SubjectRequirementSetId>PLAYER_IS_LOW_DIFFICULTY_HUMAN</SubjectRequirementSetId>
+    </Row>
+    <Row>
+      <ModifierId>HIGH_DIFFICULTY_HUMAN_MARTIAL_LAW</ModifierId>
+      <ModifierType>MODIFIER_PLAYER_LOYALTY_ADJUST_MARTIAL_LAW_MODIFIER</ModifierType>
+      <SubjectRequirementSetId>PLAYER_IS_HIGH_DIFFICULTY_HUMAN</SubjectRequirementSetId>
+    </Row>
+		<Row>
+			<ModifierId>TRAIT_DELTA_DIPLO_VISIBILITY_COMBAT_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_DIPLO_VISIBILITY_COMBAT_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_BROKEN_PLEDGE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_BROKEN_PLEDGE</ModifierType>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+			<SubjectRequirementSetId>PLAYER_IS_KNOWN_MAJOR_CIV</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_KEPT_PLEDGE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_KEPT_PLEDGE</ModifierType>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+			<SubjectRequirementSetId>PLAYER_IS_KNOWN_MAJOR_CIV</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_NO_PLEDGE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_NO_PLEDGE</ModifierType>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+			<SubjectRequirementSetId>PLAYER_IS_KNOWN_MAJOR_CIV</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_SHARED_EMERGENCY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_SHARES_EMERGENCY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_CORPS_EARLY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CORPS_ARMY_PREREQ</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_ARMIES_EARLY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CORPS_ARMY_PREREQ</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_CORPS_COMBAT_STRENGTH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CORPS_ARMY_MODIFIED_STRENGTH</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_ARMIES_COMBAT_STRENGTH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CORPS_ARMY_MODIFIED_STRENGTH</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_COMBAT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_DIPLOMATIC_COMBAT_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_MOVEMENT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_DIPLOMATIC_MOVEMENT_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_PREREQ_OVERRIDE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_DIPLOMATIC_ACTION_OVERRIDE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_DIPLOMATIC_YIELD_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_MOVEMENT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_DIPLOMATIC_MOVEMENT_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_PREREQ_OVERRIDE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_DIPLOMATIC_ACTION_OVERRIDE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ADJUST_CITY_CULTURE_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>CITY_HAS_GOVERNOR</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ADJUST_CITY_SCIENCE_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_CITY_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>CITY_HAS_GOVERNOR</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ALLIANCE_SHARED_VIS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_ALLIANCES_SHARED_VIS</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_FOOD_FROM_CAMPS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_PER_IMPROVEMENT_IN_TARGET</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_GOLD_FROM_CAMPS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_PER_IMPROVEMENT_IN_TARGET</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_FOOD_FROM_PASTURES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_PER_IMPROVEMENT_IN_TARGET</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_GOLD_FROM_PASTURES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_PER_IMPROVEMENT_IN_TARGET</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_IDENTITY_FROM_DOMESTIC_TRADE_ROUTES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_PLAYER_IDENTITY_PER_TURN_FOR_DOMESTIC_TRADE_ROUTE_ORIGIN</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CULTURE_FROM_INTERNATIONAL_TRADE_ROUTES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_YIELD_FOR_INTERNATIONAL</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CULTURE_FROM_INCOMING_TRADE_ROUTES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_FROM_OTHERS</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_DIMINISH_LOYALTY_IN_ENEMY_CITY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_POST_COMBAT_LOYALTY</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_PROTECTORATE_WAR_FAITH</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADD_DIPLOMATIC_YIELD_MODIFIER</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CITY_STATE_TOKEN_SAME_RELIGION</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_DUPLICATE_INFLUENCE_TOKEN_WHEN_SAME_RELIGION</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_COMBAT_BONUS_FOR_CAVALRY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>REQUIREMENTS_UNIT_IS_MONGOLIAN_CAVALRY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CAVALRY_CAPTURE_CAVALRY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>REQUIREMENTS_UNIT_IS_MONGOLIAN_CAVALRY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CAVALRY_CAPTURE_CAVALRY_MODIFIER</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_UNIT_CAPTURE</ModifierType>
+			<SubjectRequirementSetId>OPPONENT_IS_CAVALRY_UNIT_REQUIREMENTS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ALLIANCE_POINTS_FROM_COMMON_FOE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_ALLIANCE_POINTS_FOR_COMMON_FOE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ALLIANCE_POINTS_FROM_TRADE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_ALLIANCE_POINTS_FOR_TRADE</ModifierType>
+		</Row>
+		<!--City-State Shared Bonuses-->
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_MEDIUM_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_MEDIUM_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_LARGE_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LARGE_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_YIELD_FOR_LIBRARY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_YIELD_FOR_UNIVERSITY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_MEDIUM_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_MEDIUM_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_LARGE_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LARGE_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_YIELD_FOR_SHRINE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_YIELD_FOR_TEMPLE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_MEDIUM_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_MEDIUM_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_LARGE_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LARGE_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_YIELD_FOR_MARKET</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_YIELD_FOR_BANK</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_MEDIUM_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_MEDIUM_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_LARGE_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LARGE_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_LARGE_INFLUENCE_BONUS_ARTIFACT</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LARGE_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_AMPHITHEATER</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_ART</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_ARTIFACT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_YIELD_CHANGE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_MILITARISTIC_MEDIUM_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_MEDIUM_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_MILITARISTIC_LARGE_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LARGE_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_MILITARISTIC_PRODUCTION_FOR_BARRACKS_STABLE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNIT_PRODUCTION_CHANGE</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_BARRACKS_STABLE_MILITARITIC_CITY_STATE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_MILITARISTIC_PRODUCTION_FOR_ARMORY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNIT_PRODUCTION_CHANGE</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_ARMORY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_MEDIUM_INFLUENCE_BONUS_BUILDING</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_MEDIUM_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_MEDIUM_INFLUENCE_BONUS_DISTRICT</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_MEDIUM_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_LARGE_INFLUENCE_BONUS_BUILDING</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LARGE_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_LARGE_INFLUENCE_BONUS_DISTRICT</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LARGE_INFLUENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_BUILDING_PRODUCTION_FOR_WORKSHOP</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION_CHANGE</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_WORKSHOP</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_DISTRICT_PRODUCTION_FOR_WORKSHOP</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION_CHANGE</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_WORKSHOP</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_BUILDING_PRODUCTION_FOR_FACTORY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_BUILDING_PRODUCTION_CHANGE</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_FACTORY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_DISTRICT_PRODUCTION_FOR_FACTORY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_DISTRICT_PRODUCTION_CHANGE</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_FACTORY</SubjectRequirementSetId>
+		</Row>
+		<!--City-State Unique Bonuses-->
+		<Row>
+			<ModifierId>MINOR_CIV_ANTIOCH_UNIQUE_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_ANTIOCH_LUXURY_TRADE_ROUTE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_TRADE_ROUTE_YIELD_PER_DESTINATION_LUXURY_FOR_INTERNATIONAL</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_WRITING_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_WRITING_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREATWORK_YIELD</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_RELIC_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_RELIC_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREATWORK_YIELD</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_ARTIFACT_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_ARTIFACT_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREATWORK_YIELD</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_UNIQUE_INFLUENCE_BARRACKS_STABLE_PURCHASE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_BARRACKS_STABLE_PURCHASE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNITS_PURCHASE_COST</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_BARRACKS_STABLE_MILITARITIC_CITY_STATE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_UNIQUE_INFLUENCE_ARMORY_PURCHASE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_ARMORY_PURCHASE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNITS_PURCHASE_COST</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_ARMORY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_UNIQUE_INFLUENCE_MILITARY_ACADEMY_PURCHASE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_MILITARY_ACADEMY_PURCHASE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_UNITS_PURCHASE_COST</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_MILITARY_ACADEMY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_JERUSALEM_UNIQUE_INFLUENCE_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_JERUSALEM_HOLY_SITE_UPGRADE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_TREAT_HOLY_SITES_AS_HOLY_CITIES</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_BARRACKS_STABLE_IDENTITY_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_BARRACKS_STABLE_IDENTITY_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_IDENTITY_PER_TURN</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_BARRACKS_STABLE_MILITARITIC_CITY_STATE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_ARMORY_IDENTITY_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_ARMORY_IDENTITY_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_IDENTITY_PER_TURN</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_ARMORY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_MILITARY_ACADEMY_IDENTITY_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_MILITARY_ACADEMY_IDENTITY_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_IDENTITY_PER_TURN</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_MILITARY_ACADEMY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_GENERAL_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_GENERAL_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_BARRACKS_STABLE_MILITARITIC_CITY_STATE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_ADMIRAL_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_ADMIRAL_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_LIGHTHOUSE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_ENGINEER_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_ENGINEER_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_WORKSHOP</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_MERCHANT_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_MERCHANT_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_MARKET</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_PROPHET_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_PROPHET_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_SHRINE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_SCIENTIST_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_SCIENTIST_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_LIBRARY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_WRITER_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_WRITER_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_AMPHITHEATER</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_ARTIST_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_ARTIST_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_AMPHITHEATER</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_MUSICIAN_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_MUSICIAN_POINTS_BONUS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_CITIES_ADJUST_GREAT_PERSON_POINT</ModifierType>
+			<SubjectRequirementSetId>BUILDING_IS_AMPHITHEATER</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_UNIQUE_INFLUENCE_ALLIANCE_LEVEL_1</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_1</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_1</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>DISTRICT_IS_THEATER</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_UNIQUE_INFLUENCE_ALLIANCE_LEVEL_2</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_2</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_2</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>DISTRICT_IS_THEATER</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_UNIQUE_INFLUENCE_ALLIANCE_LEVEL_3</ModifierId>
+			<ModifierType>MODIFIER_ALL_PLAYERS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_3</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_3</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>DISTRICT_IS_THEATER</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>GOLDEN_AGE_CITY_IDENTITY</ModifierId>
+			<Name>Amount</Name>
+			<Value>0.5</Value>
+		</Row>
+		<Row>
+			<ModifierId>DARK_AGE_CITY_IDENTITY</ModifierId>
+			<Name>Amount</Name>
+			<Value>-0.5</Value>
+		</Row>
+    <Row>
+      <ModifierId>LOW_DIFFICULTY_HUMAN_MARTIAL_LAW</ModifierId>
+      <Name>Amount</Name>
+      <Value>7</Value>
+    </Row>
+    <Row>
+      <ModifierId>HIGH_DIFFICULTY_HUMAN_MARTIAL_LAW</ModifierId>
+      <Name>Amount</Name>
+      <Value>-3</Value>
+    </Row>
+		<Row>
+			<ModifierId>TRAIT_DELTA_DIPLO_VISIBILITY_COMBAT_MODIFIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_DELTA_DIPLO_VISIBILITY_COMBAT_MODIFIER</ModifierId>
+			<Name>DeltaWithOpponent</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_BROKEN_PLEDGE</ModifierId>
+			<Name>ModifierPerTransgression</Name>
+			<Value>-6</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_BROKEN_PLEDGE</ModifierId>
+			<Name>IncrementValue</Name>
+			<Value>0</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_BROKEN_PLEDGE</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_BROKEN_PLEDGE</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>15</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_BROKEN_PLEDGE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_BROKEN_PLEDGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_KEPT_PLEDGE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>0</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_KEPT_PLEDGE</ModifierId>
+			<Name>ModifierPerKeptPledge</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_KEPT_PLEDGE</ModifierId>
+			<Name>IncrementValue</Name>
+			<Value>0</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_KEPT_PLEDGE</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_KEPT_PLEDGE</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>15</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_KEPT_PLEDGE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_KEPT_PLEDGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_NO_PLEDGE</ModifierId>
+			<Name>ModifierPerTransgression</Name>
+			<Value>-3</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_NO_PLEDGE</ModifierId>
+			<Name>IncrementValue</Name>
+			<Value>0</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_NO_PLEDGE</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_NO_PLEDGE</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_NO_PLEDGE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_NO_PLEDGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_SHARED_EMERGENCY</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_SHARED_EMERGENCY</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_SHARED_EMERGENCY</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>STANDARD_DIPLOMATIC_SHARED_EMERGENCY</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_SHARED_EMERGENCY</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_CORPS_EARLY</ModifierId>
+			<Name>Corps</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_CORPS_EARLY</ModifierId>
+			<Name>Domain</Name>
+			<Value>DOMAIN_LAND</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_CORPS_EARLY</ModifierId>
+			<Name>CivicType</Name>
+			<Value>CIVIC_MERCENARIES</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_ARMIES_EARLY</ModifierId>
+			<Name>Corps</Name>
+			<Value>false</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_ARMIES_EARLY</ModifierId>
+			<Name>Domain</Name>
+			<Value>DOMAIN_LAND</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_ARMIES_EARLY</ModifierId>
+			<Name>CivicType</Name>
+			<Value>CIVIC_NATIONALISM</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_CORPS_COMBAT_STRENGTH</ModifierId>
+			<Name>Corps</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_CORPS_COMBAT_STRENGTH</ModifierId>
+			<Name>Domain</Name>
+			<Value>DOMAIN_LAND</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_CORPS_COMBAT_STRENGTH</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_ARMIES_COMBAT_STRENGTH</ModifierId>
+			<Name>Corps</Name>
+			<Value>false</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_ARMIES_COMBAT_STRENGTH</ModifierId>
+			<Name>Domain</Name>
+			<Value>DOMAIN_LAND</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LAND_ARMIES_COMBAT_STRENGTH</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_COMBAT</ModifierId>
+			<Name>DiplomaticYieldSource</Name>
+			<Value>TERRITORIAL_EXPANSION_WAR_INITIATED</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_COMBAT</ModifierId>
+			<Name>TurnsActive</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_COMBAT</ModifierId>
+			<Name>Amount</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_COMBAT</ModifierId>
+			<Name>ReligiousOnly</Name>
+			<Value>false</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_MOVEMENT</ModifierId>
+			<Name>DiplomaticYieldSource</Name>
+			<Value>TERRITORIAL_EXPANSION_WAR_INITIATED</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_MOVEMENT</ModifierId>
+			<Name>TurnsActive</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_MOVEMENT</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_PREREQ_OVERRIDE</ModifierId>
+			<Name>DiplomaticAction</Name>
+			<Value>DIPLOACTION_DECLARE_TERRITORIAL_WAR</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TERRITORIAL_WAR_PREREQ_OVERRIDE</ModifierId>
+			<Name>CivicType</Name>
+			<Value>CIVIC_MILITARY_TRAINING</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_PRODUCTION</ModifierId>
+			<Name>DiplomaticYieldSource</Name>
+			<Value>LIBERATION_WAR_INITIATED</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_PRODUCTION</ModifierId>
+			<Name>TurnsActive</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_MOVEMENT</ModifierId>
+			<Name>DiplomaticYieldSource</Name>
+			<Value>LIBERATION_WAR_INITIATED</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_MOVEMENT</ModifierId>
+			<Name>TurnsActive</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_MOVEMENT</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_PREREQ_OVERRIDE</ModifierId>
+			<Name>DiplomaticAction</Name>
+			<Value>DIPLOACTION_DECLARE_LIBERATION_WAR</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_LIBERATION_WAR_PREREQ_OVERRIDE</ModifierId>
+			<Name>CivicType</Name>
+			<Value>CIVIC_DEFENSIVE_TACTICS</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ADJUST_CITY_CULTURE_MODIFIER</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ADJUST_CITY_CULTURE_MODIFIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ADJUST_CITY_SCIENCE_MODIFIER</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ADJUST_CITY_SCIENCE_MODIFIER</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ALLIANCE_SHARED_VIS</ModifierId>
+			<Name>ShareVis</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_FOOD_FROM_CAMPS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_FOOD_FROM_CAMPS</ModifierId>
+			<Name>ImprovementType</Name>
+			<Value>IMPROVEMENT_CAMP</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_FOOD_FROM_CAMPS</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_FOOD_FROM_CAMPS</ModifierId>
+			<Name>Origin</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_FOOD_FROM_PASTURES</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_FOOD_FROM_PASTURES</ModifierId>
+			<Name>ImprovementType</Name>
+			<Value>IMPROVEMENT_PASTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_FOOD_FROM_PASTURES</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FOOD</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_FOOD_FROM_PASTURES</ModifierId>
+			<Name>Origin</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_GOLD_FROM_CAMPS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_GOLD_FROM_CAMPS</ModifierId>
+			<Name>ImprovementType</Name>
+			<Value>IMPROVEMENT_CAMP</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_GOLD_FROM_CAMPS</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_GOLD_FROM_CAMPS</ModifierId>
+			<Name>Destination</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_GOLD_FROM_PASTURES</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_GOLD_FROM_PASTURES</ModifierId>
+			<Name>ImprovementType</Name>
+			<Value>IMPROVEMENT_PASTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_GOLD_FROM_PASTURES</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_TRADE_GOLD_FROM_PASTURES</ModifierId>
+			<Name>Destination</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_IDENTITY_FROM_DOMESTIC_TRADE_ROUTES</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CULTURE_FROM_INTERNATIONAL_TRADE_ROUTES</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CULTURE_FROM_INTERNATIONAL_TRADE_ROUTES</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CULTURE_FROM_INCOMING_TRADE_ROUTES</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CULTURE_FROM_INCOMING_TRADE_ROUTES</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_DIMINISH_LOYALTY_IN_ENEMY_CITY</ModifierId>
+			<Name>Amount</Name>
+			<Value>-20</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_DIMINISH_LOYALTY_IN_ENEMY_CITY</ModifierId>
+			<Name>AffectLocal</Name>
+			<Value>false</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_PROTECTORATE_WAR_FAITH</ModifierId>
+			<Name>DiplomaticYieldSource</Name>
+			<Value>PROTECTORATE_WAR_INITIATED</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_PROTECTORATE_WAR_FAITH</ModifierId>
+			<Name>TurnsActive</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_PROTECTORATE_WAR_FAITH</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_PROTECTORATE_WAR_FAITH</ModifierId>
+			<Name>Amount</Name>
+			<Value>100</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CITY_STATE_TOKEN_SAME_RELIGION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_COMBAT_BONUS_FOR_CAVALRY</ModifierId>
+			<Name>Amount</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CAVALRY_CAPTURE_CAVALRY</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>TRAIT_CAVALRY_CAPTURE_CAVALRY_MODIFIER</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_CAVALRY_CAPTURE_CAVALRY_MODIFIER</ModifierId>
+			<Name>CanCapture</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ALLIANCE_POINTS_FROM_COMMON_FOE</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>TRAIT_ALLIANCE_POINTS_FROM_TRADE</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--City-State Shared Bonuses-->
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_MEDIUM_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_SCIENTIFIC_YIELD_FOR_LIBRARY</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_YIELD_FOR_LIBRARY</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_YIELD_FOR_LIBRARY</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_LIBRARY</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_YIELD_FOR_LIBRARY</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_YIELD_FOR_LIBRARY</ModifierId>
+			<Name>CityStatesOnly</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_LARGE_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_SCIENTIFIC_YIELD_FOR_UNIVERSITY</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_YIELD_FOR_UNIVERSITY</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_YIELD_FOR_UNIVERSITY</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_UNIVERSITY</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_YIELD_FOR_UNIVERSITY</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_SCIENTIFIC_YIELD_FOR_UNIVERSITY</ModifierId>
+			<Name>CityStatesOnly</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_MEDIUM_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_RELIGIOUS_YIELD_FOR_SHRINE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_YIELD_FOR_SHRINE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_YIELD_FOR_SHRINE</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_SHRINE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_YIELD_FOR_SHRINE</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_YIELD_FOR_SHRINE</ModifierId>
+			<Name>CityStatesOnly</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_LARGE_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_RELIGIOUS_YIELD_FOR_TEMPLE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_YIELD_FOR_TEMPLE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_YIELD_FOR_TEMPLE</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_TEMPLE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_YIELD_FOR_TEMPLE</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_RELIGIOUS_YIELD_FOR_TEMPLE</ModifierId>
+			<Name>CityStatesOnly</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_MEDIUM_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_TRADE_YIELD_FOR_MARKET</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_YIELD_FOR_MARKET</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_YIELD_FOR_MARKET</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_MARKET</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_YIELD_FOR_MARKET</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_YIELD_FOR_MARKET</ModifierId>
+			<Name>CityStatesOnly</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_LARGE_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_TRADE_YIELD_FOR_BANK</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_YIELD_FOR_BANK</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_YIELD_FOR_BANK</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_BANK</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_YIELD_FOR_BANK</ModifierId>
+			<Name>Amount</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_TRADE_YIELD_FOR_BANK</ModifierId>
+			<Name>CityStatesOnly</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_MEDIUM_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_CULTURAL_YIELD_FOR_AMPHITHEATER</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_AMPHITHEATER</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_AMPHITHEATER</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_AMPHITHEATER</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_AMPHITHEATER</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_AMPHITHEATER</ModifierId>
+			<Name>CityStatesOnly</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_LARGE_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_CULTURAL_YIELD_FOR_ART</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_ART</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_ART</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_MUSEUM_ART</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_ART</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_ART</ModifierId>
+			<Name>CityStatesOnly</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_LARGE_INFLUENCE_BONUS_ARTIFACT</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_CULTURAL_YIELD_FOR_ARTIFACT</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_ARTIFACT</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_ARTIFACT</ModifierId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_MUSEUM_ARTIFACT</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_ARTIFACT</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CULTURAL_YIELD_FOR_ARTIFACT</ModifierId>
+			<Name>CityStatesOnly</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_MILITARISTIC_MEDIUM_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_MILITARISTIC_PRODUCTION_FOR_BARRACKS_STABLE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_MILITARISTIC_PRODUCTION_FOR_BARRACKS_STABLE</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_MILITARISTIC_LARGE_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_MILITARISTIC_PRODUCTION_FOR_ARMORY</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_MILITARISTIC_PRODUCTION_FOR_ARMORY</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_MEDIUM_INFLUENCE_BONUS_BUILDING</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_INDUSTRIAL_BUILDING_PRODUCTION_FOR_WORKSHOP</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_MEDIUM_INFLUENCE_BONUS_DISTRICT</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_INDUSTRIAL_DISTRICT_PRODUCTION_FOR_WORKSHOP</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_BUILDING_PRODUCTION_FOR_WORKSHOP</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_DISTRICT_PRODUCTION_FOR_WORKSHOP</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_LARGE_INFLUENCE_BONUS_BUILDING</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_INDUSTRIAL_BUILDING_PRODUCTION_FOR_FACTORY</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_LARGE_INFLUENCE_BONUS_DISTRICT</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_INDUSTRIAL_DISTRICT_PRODUCTION_FOR_FACTORY</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_BUILDING_PRODUCTION_FOR_FACTORY</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_INDUSTRIAL_DISTRICT_PRODUCTION_FOR_FACTORY</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<!--City-State Unique Bonuses-->
+		<Row>
+			<ModifierId>MINOR_CIV_ANTIOCH_UNIQUE_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_ANTIOCH_LUXURY_TRADE_ROUTE_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_ANTIOCH_LUXURY_TRADE_ROUTE_BONUS</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_ANTIOCH_LUXURY_TRADE_ROUTE_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_WRITING_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_BABYLON_GREAT_WORK_WRITING_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_WRITING_SCIENCE</ModifierId>
+			<Name>GreatWorkObjectType</Name>
+			<Value>GREATWORKOBJECT_WRITING</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_WRITING_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_WRITING_SCIENCE</ModifierId>
+			<Name>YieldChange</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_ARTIFACT_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_BABYLON_GREAT_WORK_ARTIFACT_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_ARTIFACT_SCIENCE</ModifierId>
+			<Name>GreatWorkObjectType</Name>
+			<Value>GREATWORKOBJECT_ARTIFACT</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_ARTIFACT_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_ARTIFACT_SCIENCE</ModifierId>
+			<Name>YieldChange</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_RELIC_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_BABYLON_GREAT_WORK_RELIC_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_RELIC_SCIENCE</ModifierId>
+			<Name>GreatWorkObjectType</Name>
+			<Value>GREATWORKOBJECT_RELIC</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_RELIC_SCIENCE</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_BABYLON_GREAT_WORK_RELIC_SCIENCE</ModifierId>
+			<Name>YieldChange</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_UNIQUE_INFLUENCE_BARRACKS_STABLE_PURCHASE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_CARTHAGE_BARRACKS_STABLE_PURCHASE_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_BARRACKS_STABLE_PURCHASE_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_BARRACKS_STABLE_PURCHASE_BONUS</ModifierId>
+			<Name>UnitDomain</Name>
+			<Value>DOMAIN_LAND</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_UNIQUE_INFLUENCE_ARMORY_PURCHASE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_CARTHAGE_ARMORY_PURCHASE_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_ARMORY_PURCHASE_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_ARMORY_PURCHASE_BONUS</ModifierId>
+			<Name>UnitDomain</Name>
+			<Value>DOMAIN_LAND</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_UNIQUE_INFLUENCE_MILITARY_ACADEMY_PURCHASE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_CARTHAGE_MILITARY_ACADEMY_PURCHASE_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_MILITARY_ACADEMY_PURCHASE_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_CARTHAGE_MILITARY_ACADEMY_PURCHASE_BONUS</ModifierId>
+			<Name>UnitDomain</Name>
+			<Value>DOMAIN_LAND</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_JERUSALEM_UNIQUE_INFLUENCE_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_JERUSALEM_HOLY_SITE_UPGRADE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_JERUSALEM_HOLY_SITE_UPGRADE</ModifierId>
+			<Name>Value</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_BARRACKS_STABLE_IDENTITY_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_PRESLAV_BARRACKS_STABLE_IDENTITY_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_BARRACKS_STABLE_IDENTITY_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_ARMORY_IDENTITY_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_PRESLAV_ARMORY_IDENTITY_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_ARMORY_IDENTITY_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_UNIQUE_INFLUENCE_MILITARY_ACADEMY_IDENTITY_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_PRESLAV_MILITARY_ACADEMY_IDENTITY_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_PRESLAV_MILITARY_ACADEMY_IDENTITY_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_GENERAL_POINTS_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_STOCKHOLM_GREAT_GENERAL_POINTS_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_GENERAL_POINTS_BONUS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_GENERAL</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_GENERAL_POINTS_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_ADMIRAL_POINTS_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_STOCKHOLM_GREAT_ADMIRAL_POINTS_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_ADMIRAL_POINTS_BONUS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_ADMIRAL</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_ADMIRAL_POINTS_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_ENGINEER_POINTS_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_STOCKHOLM_GREAT_ENGINEER_POINTS_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_ENGINEER_POINTS_BONUS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_ENGINEER</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_ENGINEER_POINTS_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_MERCHANT_POINTS_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_STOCKHOLM_GREAT_MERCHANT_POINTS_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_MERCHANT_POINTS_BONUS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_MERCHANT</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_MERCHANT_POINTS_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_PROPHET_POINTS_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_STOCKHOLM_GREAT_PROPHET_POINTS_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_PROPHET_POINTS_BONUS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_PROPHET</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_PROPHET_POINTS_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_SCIENTIST_POINTS_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_STOCKHOLM_GREAT_SCIENTIST_POINTS_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_SCIENTIST_POINTS_BONUS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_SCIENTIST</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_SCIENTIST_POINTS_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_WRITER_POINTS_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_STOCKHOLM_GREAT_WRITER_POINTS_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_WRITER_POINTS_BONUS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_WRITER</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_WRITER_POINTS_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_ARTIST_POINTS_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_STOCKHOLM_GREAT_ARTIST_POINTS_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_ARTIST_POINTS_BONUS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_ARTIST</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_ARTIST_POINTS_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_UNIQUE_INFLUENCE_GREAT_MUSICIAN_POINTS_BONUS</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_STOCKHOLM_GREAT_MUSICIAN_POINTS_BONUS</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_MUSICIAN_POINTS_BONUS</ModifierId>
+			<Name>GreatPersonClassType</Name>
+			<Value>GREAT_PERSON_CLASS_MUSICIAN</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_STOCKHOLM_GREAT_MUSICIAN_POINTS_BONUS</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_UNIQUE_INFLUENCE_ALLIANCE_LEVEL_1</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_1</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_1</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_1</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_UNIQUE_INFLUENCE_ALLIANCE_LEVEL_2</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_2</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_2</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_2</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_UNIQUE_INFLUENCE_ALLIANCE_LEVEL_3</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_3</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_3</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<Row>
+			<ModifierId>MINOR_CIV_VILNIUS_ALLIANCE_LEVEL_3</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+	</ModifierArguments>
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>CITY_HAS_GOVERNOR</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_GOLDEN_AGE</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_ELIGIBLE_FOR_COMMEMORATION_QUEST</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_DARK_AGE</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+    <Row>
+      <RequirementSetId>PLAYER_IS_HIGH_DIFFICULTY_HUMAN</RequirementSetId>
+      <RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+    </Row>
+		<Row>
+			<RequirementSetId>PLAYER_SHARES_EMERGENCY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>OPPONENT_IS_DEFENSIBLE_DISTRICT_REQURIEMENTS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_UNIT_IS_MONGOLIAN_CAVALRY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>OPPONENT_IS_CAVALRY_UNIT_REQUIREMENTS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_BARRACKS_STABLE_MILITARITIC_CITY_STATE</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ANY</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_ARMORY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_WORKSHOP</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_FACTORY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_SHRINE</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_MARKET</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_LIBRARY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_AMPHITHEATER</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_LIGHTHOUSE</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_MILITARY_ACADEMY</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_1</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_2</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_3</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>CITY_HAS_GOVERNOR</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_GOVERNOR</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_GOLDEN_AGE</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_HAS_GOLDEN_AGE</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_ELIGIBLE_FOR_COMMEMORATION_QUEST</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_NOT_HAS_GOLDEN_AGE</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_ELIGIBLE_FOR_COMMEMORATION_QUEST</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_ALWAYS_ALLOWED_COMMEMORATION_QUEST</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_DARK_AGE</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_HAS_DARK_AGE</RequirementId>
+		</Row>
+    <Row>
+      <RequirementSetId>PLAYER_IS_HIGH_DIFFICULTY_HUMAN</RequirementSetId>
+      <RequirementId>REQUIRES_PLAYER_IS_HUMAN</RequirementId>
+    </Row>
+    <Row>
+      <RequirementSetId>PLAYER_IS_HIGH_DIFFICULTY_HUMAN</RequirementSetId>
+      <RequirementId>REQUIRES_EMPEROR_OR_HIGHER_DIFFICULTY</RequirementId>
+    </Row>
+		<Row>
+			<RequirementSetId>PLAYER_SHARES_EMERGENCY</RequirementSetId>
+			<RequirementId>REQUIRES_MAJOR_CIV_OPPONENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_SHARES_EMERGENCY</RequirementSetId>
+			<RequirementId>REQUIRES_SHARED_EMERGENCY</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>OPPONENT_IS_DEFENSIBLE_DISTRICT_REQURIEMENTS</RequirementSetId>
+			<RequirementId>PLOT_DISTRICT_IS_DEFENDED_REQUIREMENTS</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_UNIT_IS_MONGOLIAN_CAVALRY</RequirementSetId>
+			<RequirementId>UNIT_IS_LIGHT_CAVALRY_REQUIREMENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_UNIT_IS_MONGOLIAN_CAVALRY</RequirementSetId>
+			<RequirementId>UNIT_IS_HEAVY_CAVALRY_REQUIREMENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>REQUIREMENTS_UNIT_IS_MONGOLIAN_CAVALRY</RequirementSetId>
+			<RequirementId>UNIT_IS_MONGOLIAN_KESHIG_REQUIREMENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>OPPONENT_IS_CAVALRY_UNIT_REQUIREMENTS</RequirementSetId>
+			<RequirementId>OPPONENT_IS_LIGHT_CAVALRY_REQUIREMENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>OPPONENT_IS_CAVALRY_UNIT_REQUIREMENTS</RequirementSetId>
+			<RequirementId>OPPONENT_IS_HEAVY_CAVALRY_REQUIREMENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>OPPONENT_IS_CAVALRY_UNIT_REQUIREMENTS</RequirementSetId>
+			<RequirementId>OPPONENT_IS_RANGED_CAVALRY_REQUIREMENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_BARRACKS_STABLE_MILITARITIC_CITY_STATE</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_BARRACKS</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_BARRACKS_STABLE_MILITARITIC_CITY_STATE</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_STABLE</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_ARMORY</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_ARMORY</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_WORKSHOP</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_WORKSHOP</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_FACTORY</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_FACTORY</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_SHRINE</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_SHRINE</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_MARKET</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_MARKET</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_LIBRARY</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_LIBRARY</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_AMPHITHEATER</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_AMPHITHEATER</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_LIGHTHOUSE</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_LIGHTHOUSE</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>BUILDING_IS_MILITARY_ACADEMY</RequirementSetId>
+			<RequirementId>REQUIRES_CITY_HAS_MILITARY_ACADEMY</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_1</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_IS_SUZERAIN</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_1</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_IS_ALLY_LEVEL_1</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_2</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_IS_SUZERAIN</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_2</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_IS_ALLY_LEVEL_2</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_3</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_IS_SUZERAIN</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SUZERAIN_ALLY_LEVEL_3</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_IS_ALLY_LEVEL_3</RequirementId>
+		</Row>
+		<!-- Careful, these are extra requirements added to a base-game requirement set. -->
+		<Row>
+			<RequirementSetId>PLAYER_DEFENSIVE_PACT</RequirementSetId>
+			<RequirementId>REQUIRES_PLAYER_NOT_ALLY</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_GOVERNOR</RequirementId>
+			<RequirementType>REQUIREMENT_CITY_HAS_GOVERNOR</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_PLAYER_HAS_GOLDEN_AGE</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_HAS_GOLDEN_AGE</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_PLAYER_NOT_HAS_GOLDEN_AGE</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_HAS_GOLDEN_AGE</RequirementType>
+			<Inverse>true</Inverse>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_PLAYER_ALWAYS_ALLOWED_COMMEMORATION_QUEST</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_ALWAYS_ALLOWED_COMMEMORATION_QUEST</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_PLAYER_HAS_DARK_AGE</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_HAS_DARK_AGE</RequirementType>
+		</Row>
+    <Row>
+      <RequirementId>REQUIRES_EMPEROR_OR_HIGHER_DIFFICULTY</RequirementId>
+      <RequirementType>REQUIREMENT_PLAYER_HANDICAP_AT_OR_ABOVE</RequirementType>
+    </Row>
+		<Row>
+			<RequirementId>REQUIRES_SHARED_EMERGENCY</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_IN_JOINT_EMERGENCY</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>UNIT_IS_LIGHT_CAVALRY_REQUIREMENT</RequirementId>
+			<RequirementType>REQUIREMENT_UNIT_PROMOTION_CLASS_MATCHES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>UNIT_IS_HEAVY_CAVALRY_REQUIREMENT</RequirementId>
+			<RequirementType>REQUIREMENT_UNIT_PROMOTION_CLASS_MATCHES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>UNIT_IS_MONGOLIAN_KESHIG_REQUIREMENT</RequirementId>
+			<RequirementType>REQUIREMENT_UNIT_TAG_MATCHES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>OPPONENT_IS_LIGHT_CAVALRY_REQUIREMENT</RequirementId>
+			<RequirementType>REQUIREMENT_OPPONENT_UNIT_PROMOTION_CLASS_MATCHES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>OPPONENT_IS_RANGED_CAVALRY_REQUIREMENT</RequirementId>
+			<RequirementType>REQUIREMENT_OPPONENT_UNIT_TAG_MATCHES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_BARRACKS</RequirementId>
+			<RequirementType>REQUIREMENT_CITY_HAS_BUILDING</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_STABLE</RequirementId>
+			<RequirementType>REQUIREMENT_CITY_HAS_BUILDING</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_ARMORY</RequirementId>
+			<RequirementType>REQUIREMENT_CITY_HAS_BUILDING</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_WORKSHOP</RequirementId>
+			<RequirementType>REQUIREMENT_CITY_HAS_BUILDING</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_FACTORY</RequirementId>
+			<RequirementType>REQUIREMENT_CITY_HAS_BUILDING</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_MARKET</RequirementId>
+			<RequirementType>REQUIREMENT_CITY_HAS_BUILDING</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_LIBRARY</RequirementId>
+			<RequirementType>REQUIREMENT_CITY_HAS_BUILDING</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_AMPHITHEATER</RequirementId>
+			<RequirementType>REQUIREMENT_CITY_HAS_BUILDING</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_PLAYER_IS_ALLY_LEVEL_1</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_HAS_ACTIVE_ALLIANCE_OF_AT_LEAST_LEVEL</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_PLAYER_IS_ALLY_LEVEL_2</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_HAS_ACTIVE_ALLIANCE_OF_AT_LEAST_LEVEL</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_PLAYER_IS_ALLY_LEVEL_3</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_HAS_ACTIVE_ALLIANCE_OF_AT_LEAST_LEVEL</RequirementType>
+		</Row>
+	</Requirements>
+	<RequirementArguments>
+    <Row>
+      <RequirementId>REQUIRES_EMPEROR_OR_HIGHER_DIFFICULTY</RequirementId>
+      <Name>Handicap</Name>
+      <Value>DIFFICULTY_EMPEROR</Value>
+    </Row>
+		<Row>
+			<RequirementId>UNIT_IS_LIGHT_CAVALRY_REQUIREMENT</RequirementId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_LIGHT_CAVALRY</Value>
+		</Row>
+		<Row>
+			<RequirementId>UNIT_IS_HEAVY_CAVALRY_REQUIREMENT</RequirementId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_HEAVY_CAVALRY</Value>
+		</Row>
+		<Row>
+			<RequirementId>UNIT_IS_MONGOLIAN_KESHIG_REQUIREMENT</RequirementId>
+			<Name>Tag</Name>
+			<Value>CLASS_MONGOLIAN_KESHIG</Value>
+		</Row>
+		<Row>
+			<RequirementId>OPPONENT_IS_LIGHT_CAVALRY_REQUIREMENT</RequirementId>
+			<Name>UnitPromotionClass</Name>
+			<Value>PROMOTION_CLASS_LIGHT_CAVALRY</Value>
+		</Row>
+		<Row>
+			<RequirementId>OPPONENT_IS_RANGED_CAVALRY_REQUIREMENT</RequirementId>
+			<Name>Tag</Name>
+			<Value>CLASS_RANGED_CAVALRY</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_BARRACKS</RequirementId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_BARRACKS</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_STABLE</RequirementId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_STABLE</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_ARMORY</RequirementId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_ARMORY</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_WORKSHOP</RequirementId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_WORKSHOP</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_FACTORY</RequirementId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_FACTORY</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_MARKET</RequirementId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_MARKET</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_LIBRARY</RequirementId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_LIBRARY</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_CITY_HAS_AMPHITHEATER</RequirementId>
+			<Name>BuildingType</Name>
+			<Value>BUILDING_AMPHITHEATER</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_PLAYER_IS_ALLY_LEVEL_1</RequirementId>
+			<Name>Level</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_PLAYER_IS_ALLY_LEVEL_2</RequirementId>
+			<Name>Level</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_PLAYER_IS_ALLY_LEVEL_3</RequirementId>
+			<Name>Level</Name>
+			<Value>3</Value>
+		</Row>
+	</RequirementArguments>
+	<ModifierStrings>
+		<Row ModifierId="STANDARD_DIPLOMATIC_BROKEN_PLEDGE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="STANDARD_DIPLOMATIC_KEPT_PLEDGE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="STANDARD_DIPLOMATIC_NO_PLEDGE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="STANDARD_DIPLOMATIC_SHARED_EMERGENCY" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="TRAIT_COMBAT_BONUS_FOR_CAVALRY" Context="Preview" Text="LOC_LEADER_CAVALRY_COMBAT_BONUS_PREVIEW_TEXT"/>
+		<Row ModifierId="MINOR_CIV_SCIENTIFIC_MEDIUM_INFLUENCE_BONUS" Context="Preview" Text="LOC_MINOR_CIV_SCIENTIFIC_TRAIT_MEDIUM_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_SCIENTIFIC_LARGE_INFLUENCE_BONUS" Context="Preview" Text="LOC_MINOR_CIV_SCIENTIFIC_TRAIT_LARGE_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_RELIGIOUS_MEDIUM_INFLUENCE_BONUS" Context="Preview" Text="LOC_MINOR_CIV_RELIGIOUS_TRAIT_MEDIUM_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_RELIGIOUS_LARGE_INFLUENCE_BONUS" Context="Preview" Text="LOC_MINOR_CIV_RELIGIOUS_TRAIT_LARGE_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_TRADE_MEDIUM_INFLUENCE_BONUS" Context="Preview" Text="LOC_MINOR_CIV_TRADE_TRAIT_MEDIUM_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_TRADE_LARGE_INFLUENCE_BONUS" Context="Preview" Text="LOC_MINOR_CIV_TRADE_TRAIT_LARGE_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_CULTURAL_MEDIUM_INFLUENCE_BONUS" Context="Preview" Text="LOC_MINOR_CIV_CULTURAL_TRAIT_MEDIUM_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_CULTURAL_LARGE_INFLUENCE_BONUS" Context="Preview" Text="LOC_MINOR_CIV_CULTURAL_TRAIT_LARGE_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_MILITARISTIC_MEDIUM_INFLUENCE_BONUS" Context="Preview" Text="LOC_MINOR_CIV_MILITARISTIC_TRAIT_MEDIUM_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_MILITARISTIC_LARGE_INFLUENCE_BONUS" Context="Preview" Text="LOC_MINOR_CIV_MILITARISTIC_TRAIT_LARGE_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_INDUSTRIAL_MEDIUM_INFLUENCE_BONUS_BUILDING" Context="Preview" Text="LOC_MINOR_CIV_INDUSTRIAL_TRAIT_MEDIUM_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_INDUSTRIAL_MEDIUM_INFLUENCE_BONUS_DISTRICT" Context="Preview" Text="LOC_MINOR_CIV_INDUSTRIAL_TRAIT_MEDIUM_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_INDUSTRIAL_LARGE_INFLUENCE_BONUS_BUILDING" Context="Preview" Text="LOC_MINOR_CIV_INDUSTRIAL_TRAIT_LARGE_INFLUENCE_BONUS"/>
+		<Row ModifierId="MINOR_CIV_INDUSTRIAL_LARGE_INFLUENCE_BONUS_DISTRICT" Context="Preview" Text="LOC_MINOR_CIV_INDUSTRIAL_TRAIT_LARGE_INFLUENCE_BONUS"/>
+	</ModifierStrings>
+	<FavoredReligions>
+		<Row LeaderType="LEADER_CHANDRAGUPTA" ReligionType="RELIGION_HINDUISM"/>
+		<Row LeaderType="LEADER_ROBERT_THE_BRUCE" ReligionType="RELIGION_CATHOLICISM"/>
+		<Row LeaderType="LEADER_SEONDEOK" ReligionType="RELIGION_BUDDHISM"/>
+		<Row LeaderType="LEADER_TAMAR" ReligionType="RELIGION_ORTHODOXY"/>
+		<Row LeaderType="LEADER_WILHELMINA" ReligionType="RELIGION_PROTESTANTISM"/>
+	</FavoredReligions>
+</GameInfo>
