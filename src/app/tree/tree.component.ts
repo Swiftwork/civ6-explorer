@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Civics } from '../data/civics';
-import { TreeNode } from '../models/node.model';
+import { TreeNode } from '../models/tree-node.model';
 import { XmlReader } from '../services/xmlreader';
 
 @Component({
