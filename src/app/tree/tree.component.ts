@@ -13,11 +13,10 @@ export class TreeComponent implements OnInit {
 
   public nodes: TreeNode[] = Civics;
 
-  constructor() { }
+  constructor(private xmlReader: XmlReader) { }
 
   ngOnInit() {
-    let xmlreader = new XmlReader();
-    xmlreader.read();
+    this.xmlReader.read();
   }
 
   public transform(x = 0, y = 0, z = 0, deg = 0) {
