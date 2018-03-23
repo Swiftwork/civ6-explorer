@@ -5,14 +5,14 @@ import { Diplomacy } from '../models/diplomacy.model';
 import { District } from '../models/district.model';
 import { Envoy } from '../models/envoy.model';
 import { Government } from '../models/government.model';
-import { Governour } from '../models/governour.model';
+import { Governor } from '../models/governor.model';
 import { Policy } from '../models/policy.model';
 import { Unit } from '../models/unit.model';
 import { Wonder } from '../models/wonder.model';
 
 /* Policies */
 import {
-  GodKing, UrbanPlanning
+  GodKing, UrbanPlanning,
 } from './policies';
 
 export const Civics: TreeNode[] = [];
@@ -22,7 +22,7 @@ export const CodeOfLaws = new TreeNode(
   [GodKing, UrbanPlanning],
   [],
   0,
-  ''
+  '',
 );
 
 export const Craftsmanship = new TreeNode(
@@ -30,7 +30,7 @@ export const Craftsmanship = new TreeNode(
   [],
   [CodeOfLaws],
   0,
-  'Improve 3 tiles'
+  'Improve 3 tiles',
 
 );
 
@@ -39,9 +39,9 @@ export const ForeignTrade = new TreeNode(
   [],
   [CodeOfLaws],
   0,
-  'Discover a second continent'
+  'Discover a second continent',
 );
 
 Civics.push(
-  CodeOfLaws, Craftsmanship, ForeignTrade
-)
+  CodeOfLaws, Craftsmanship, ForeignTrade,
+);
