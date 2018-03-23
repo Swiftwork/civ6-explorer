@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Civics } from '../data/civics';
 import { TreeNode } from '../models/node.model';
+import { XmlReader } from '../services/xmlreader';
 
 @Component({
   selector: 'x-tree',
@@ -15,7 +16,8 @@ export class TreeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('hej erik');
+    let xmlreader = new XmlReader();
+    xmlreader.read();
   }
 
   public transform(x = 0, y = 0, z = 0, deg = 0) {
