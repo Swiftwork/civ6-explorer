@@ -21,15 +21,15 @@ export enum Era {
 
 export class TreeNode {
   constructor(
-    public CivicType: string,
-    public Name: string,
-    public Description: string,
-    public Cost: number,
-    public AdvisorType: string,
-    public EraType: Era,
-    public UITreeRow: number,
-    public Prereq?: string[],
-    public Boost?: string,
-    public Repeatable?: boolean,
+    public civic: string,
+    public name: string,
+    public description: string,
+    public cost: number,
+    public advisor: string,
+    public era: Era,
+    public row: number,
+    public prereq?: string[],
+    public boost?: string,
+    public repeatable?: boolean,
   ) { }
 }
