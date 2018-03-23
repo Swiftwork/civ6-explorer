@@ -17,7 +17,8 @@ export class TreeNode {
     AdvisorType: string,
     EraType: string,
     UITreeRow: number,
-    Prereq: string[],
-    Boost: string,
+    Prereq?: string[],
+    Boost?: string,
+    Repeatable?: boolean,
   ) { }
 }
