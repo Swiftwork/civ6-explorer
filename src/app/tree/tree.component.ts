@@ -15,11 +15,14 @@ export class TreeComponent implements OnInit {
 
   public nodes: TreeNode[] = Civics;
 
-  private treeRows = 8;
-  private treeHeight = 0;
-  private rowHeight = 0;
+  protected columns: Map<number, TreeNode[]> = new Map<number, TreeNode[]>();
 
-  constructor(private xmlReader: XmlReader) { }
+  protected treeRows = 8;
+  protected treeHeight = 0;
+  protected rowHeight = 0;
+  protected nodeWidth = 256;
+
+  constructor(protected xmlReader: XmlReader) { }
 
   ngOnInit() {
     let civicsJson;
@@ -27,6 +30,7 @@ export class TreeComponent implements OnInit {
       civicsJson = data;
     });
     console.log('civics', civicsJson);
+    this.updateColumns(this.nodes);
   }
 
   ngAfterViewInit() {
@@ -35,9 +39,18 @@ export class TreeComponent implements OnInit {
     console.log(this.treeHeight);
   }
 
+  updateColumns(nodes: TreeNode[]) {
+    nodes.forEach((node) => {
+      let column = this.columns.get(node.cost) || [];
+      column.push(node);
+      this.columns.set(node.cost, column);
+    });
+    console.log(this.columns);
+  }
+
   public layout(row: number, cost: number, era: Era) {
-    let x = 0;
-    let y = this.rowHeight * row;
+    let x = this.nodeWidth;
+    let y = this.rowHeight * (row + 3);
     return `translate(${x}, ${y})`;
   }
 

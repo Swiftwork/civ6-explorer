@@ -5,7 +5,7 @@
 <svg #treeRef
   class="tree">
   <g class="node"
-    [attr.transform]="layout(node.row)"
+    [attr.transform]="layout(node.row, node.cost, node.era)"
     *ngFor="let node of nodes">
     <rect x="0"
       y="0"
