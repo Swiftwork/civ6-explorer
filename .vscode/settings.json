@@ -4,43 +4,17 @@
   "docthis.includeMemberOfOnInterfaceMembers": false,
   "files.insertFinalNewline": true,
   "html.format.wrapAttributes": "force",
-  "postcssSorting": "./config/postcss.sorting.js",
   "scss.validate": false,
   "search.exclude": {
     "**/node_modules": true,
     "dist": true,
     "docs": true
   },
-  "stylefmt.config": "./config/stylelint.config.js",
+  "stylefmt.config": "./.config/stylelint.config.js",
   "stylelint.enable": true,
   "tslint.autoFixOnSave": true,
-  "tslint.configFile": "./config/tslint.config.js",
+  "tslint.configFile": "./.config/tslint.config.js",
   "tslint.enable": true,
   "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "typescriptHero.resolver.importGroups": [
-    "Plains",
-    "Modules",
-    "/module|resolver|service/",
-    "Workspace"
-  ],
-  "typescriptHero.resolver.organizeOnSave": true,
-  /*
-  "attrsSorter.order": [
-    "[\\[\\(]*(.*\\.)?(t|T)ype[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(i|I)d[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(n|N)ame[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(c|C)lass[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(r|R)ole[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(f|F)or[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(h|H)ref[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(s|S)rc[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(a|A)lt[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(t|T)itle[\\]\\)]*",
-    "$unknown$",
-    "[\\[\\(]*(.*\\.)?(d|D)ata-[a-zA-Z]+[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(a|A)ria-[a-zA-Z]+[\\]\\)]*",
-    "[\\[\\(]*(.*\\.)?(n|N)g[a-zA-Z]+[\\]\\)]*",
-  ],
-  */
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

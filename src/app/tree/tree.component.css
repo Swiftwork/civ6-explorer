@@ -3,6 +3,7 @@
   height: 480px;
   overflow-x: auto;
 }
+
 .node {
   rect {
     fill: burlywood;
