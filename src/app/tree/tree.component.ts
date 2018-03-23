@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 import { Civics } from '../data/civics';
 import { Era, TreeNode } from '../models/tree-node.model';
+import { ICivicPrereqs, ICivicPrereqsRow, ICivicRow, ICivicsJson } from '../models/xml/civics';
 import { XmlReader } from '../services/xmlreader';
 
 @Component({
@@ -20,8 +21,6 @@ export class TreeComponent implements OnInit {
   private treeHeight = 0;
   private rowHeight = 0;
 
-  public exampleCivic: TreeNode = new TreeNode('CIVIC_CODE_OF_LAWS', 'LOC_CIVIC_CODE_OF_LAWS_NAME', '', 20, 'ADVISOR_GENERIC', Era.ERA_ANCIENT, 0, [], '');
-
   constructor(private xmlReader: XmlReader) { }
 
   ngOnInit() {
@@ -30,7 +29,7 @@ export class TreeComponent implements OnInit {
 
       for (let i = 0; i < data.GameInfo.Civics.Row.length; i++) {
         let civicrow = data.GameInfo.Civics.Row[i].$ as ICivicRow;
-        console.log(i, civicrow);
+        // console.log(i, civicrow);
         this.jsonCivics.push(new TreeNode(
           civicrow.CivicType,
           civicrow.Name,
@@ -39,14 +38,22 @@ export class TreeComponent implements OnInit {
           civicrow.AdvisorType,
           this.getEraType(civicrow.EraType),
           +civicrow.UITreeRow + 3,
-          ['Prereq'],
+          this.getPreReqs(civicrow.CivicType, data.GameInfo.CivicPrereqs.Row),
           'Boost',
           false,
         ));
       }
       console.log('civics parsed', this.jsonCivics);
     });
-    console.log(this.nodes);
+  }
+
+  private getPreReqs(civic: string, prereqs: any[]): string[] {
+    let civicPrereqs = [];
+    for (let i = 0; i < prereqs.length; i++) {
+      let prereq = prereqs[i].$ as ICivicPrereqsRow;
+      if (prereq.Civic === civic) civicPrereqs.push(prereq.PrereqCivic);
+    }
+    return civicPrereqs;
   }
 
   private getEraType(eratype: string): Era {
@@ -83,35 +90,4 @@ export class TreeComponent implements OnInit {
     return `translate(${x}, ${y})`;
   }
 
-}
-
-interface ICivicsJson {
-  GameInfo: {
-    Boosts: IRow,
-    CivicModifiers: IRow,
-    CivicPrereqs: IRow,
-    CivicQuotes: IRow,
-    Civics: IRow,
-    Kinds: IRow,
-    ModifierArguments: IRow,
-    Modifiers: IRow,
-    RequirementArguments: IRow,
-    RequirementSetRequirements: IRow,
-    RequirementSets: IRow,
-    Requirements: IRow,
-    Types: IRow,
-  }
-}
-
-interface ICivicRow {
-  AdvisorType: string,
-  CivicType: string,
-  Cost: string,
-  EraType: string,
-  Name: string,
-  UITreeRow: string,
-}
-
-interface IRow {
-  Row: any[],
 }
