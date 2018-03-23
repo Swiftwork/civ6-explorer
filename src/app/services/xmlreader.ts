@@ -1,27 +1,39 @@
 
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { map } from 'rxjs/operators/map';
 import * as xml2js from 'xml2js';
 
 @Injectable()
 export class XmlReader {
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
 
   }
 
   public read() {
     console.log('starting reader');
-
-    let parser = new xml2js.Parser();
-    this.http.get('/assets/BaseGame/Agendas.xml').subscribe((data) => {
-
-      console.log('data', data);
-      // parser.parseString(data, (result: xml2js.convertableToString) => {
-      //   console.dir(result);
-      //   console.log('Done');
-      // });
+    this.getData().pipe(map((res: string) => this.convertToJson(res))).subscribe((res: Object) => {
+      console.dir(res);
     });
+  }
+
+  private convertToJson(data: string): Object {
+    let res;
+
+    xml2js.parseString(data, { explicitArray: false }, (error, result) => {
+      if (error) {
+        throw new Error(error);
+      } else {
+        res = result;
+      }
+    });
+
+    return res;
+  }
+
+  private getData() {
+    return this.http.get('/assets/data/BaseGame/Agendas.xml', { responseType: 'text' });
   }
 
 }
