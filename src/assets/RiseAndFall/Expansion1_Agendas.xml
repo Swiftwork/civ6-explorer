@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+<GameInfo>
+	<Types>
+		<Row Type="TRAIT_AGENDA_BILLIONAIRE" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_CHEOMSEONGDAE" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_FLOWER_OF_SCOTLAND" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_HORN_CHEST_LOINS" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_HORSE_LORD" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_IRON_CONFEDERACY" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_MAURYA_EMPIRE" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_NARIKALA_FORTRESS" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_SPIRIT_OF_TUCAPEL" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_CURMUDGEON" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_FLIRTATIOUS" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_GOSSIP" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_SYCOPHANT" Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_AGENDA_SYMPATHIZER" Kind="KIND_TRAIT"/>
+	</Types>
+	<Traits>
+		<Row TraitType="TRAIT_AGENDA_BILLIONAIRE" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_CHEOMSEONGDAE" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_FLOWER_OF_SCOTLAND" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_HORN_CHEST_LOINS" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_HORSE_LORD" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_IRON_CONFEDERACY" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_MAURYA_EMPIRE" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_NARIKALA_FORTRESS" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_SPIRIT_OF_TUCAPEL" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_CURMUDGEON" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_FLIRTATIOUS" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_GOSSIP" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_SYCOPHANT" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+		<Row TraitType="TRAIT_AGENDA_SYMPATHIZER" Name="LOC_PLACEHOLDER" Description="LOC_PLACEHOLDER"/>
+	</Traits>
+	<!-- Note: The traditional Historical agendas are listed in leaders.xml. These are intended as random agendas tele-->
+	<Agendas>
+		<Row AgendaType="AGENDA_CURMUDGEON" Name="LOC_AGENDA_CURMUDGEON_NAME" Description="LOC_AGENDA_CURMUDGEON_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_FLIRTATIOUS" Name="LOC_AGENDA_FLIRTATIOUS_NAME" Description="LOC_AGENDA_FLIRTATIOUS_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_GOSSIP" Name="LOC_AGENDA_GOSSIP_NAME" Description="LOC_AGENDA_GOSSIP_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_SYCOPHANT" Name="LOC_AGENDA_SYCOPHANT_NAME" Description="LOC_AGENDA_SYCOPHANT_DESCRIPTION"/>
+		<Row AgendaType="AGENDA_SYMPATHIZER" Name="LOC_AGENDA_SYMPATHIZER_NAME" Description="LOC_AGENDA_SYMPATHIZER_DESCRIPTION"/>
+	</Agendas>
+	<RandomAgendas>
+		<Row AgendaType="AGENDA_CURMUDGEON"/>
+		<Row AgendaType="AGENDA_FLIRTATIOUS" GameLimit="3"/>
+		<Row AgendaType="AGENDA_GOSSIP"/>
+		<Row AgendaType="AGENDA_SYCOPHANT"/>
+		<Row AgendaType="AGENDA_SYMPATHIZER"/>
+	</RandomAgendas>
+	<AgendaPreferredLeaders>
+		<Row AgendaType="AGENDA_FLIRTATIOUS" LeaderType="LEADER_CATHERINE_DE_MEDICI" PercentageChance="10"/>
+		<Row AgendaType="AGENDA_FLIRTATIOUS" LeaderType="LEADER_CHANDRAGUPTA" PercentageChance="10"/>
+		<Row AgendaType="AGENDA_FLIRTATIOUS" LeaderType="LEADER_CLEOPATRA" PercentageChance="30"/>
+		<Row AgendaType="AGENDA_FLIRTATIOUS" LeaderType="LEADER_GILGAMESH" PercentageChance="15"/>
+		<Row AgendaType="AGENDA_FLIRTATIOUS" LeaderType="LEADER_PETER_GREAT" PercentageChance="15"/>
+		<Row AgendaType="AGENDA_FLIRTATIOUS" LeaderType="LEADER_PHILIP_II" PercentageChance="15"/>
+		<Row AgendaType="AGENDA_GOSSIP" LeaderType="LEADER_CATHERINE_DE_MEDICI" PercentageChance="15"/>
+		<Row AgendaType="AGENDA_SYCOPHANT" LeaderType="LEADER_GORGO" PercentageChance="10"/>
+		<Row AgendaType="AGENDA_SYCOPHANT" LeaderType="LEADER_PHILIP_II" PercentageChance="10"/>
+		<Row AgendaType="AGENDA_SYCOPHANT" LeaderType="LEADER_PETER_GREAT" PercentageChance="10"/>
+		<Row AgendaType="AGENDA_SYMPATHIZER" LeaderType="LEADER_LAUTARO" PercentageChance="10"/>
+		<Row AgendaType="AGENDA_SYMPATHIZER" LeaderType="LEADER_GENGHIS_KHAN" PercentageChance="10"/>
+	</AgendaPreferredLeaders>
+	<ExclusiveAgendas>
+		<Row AgendaOne="AGENDA_CHEOMSEONGDAE" AgendaTwo="AGENDA_TECHNOPHILE"/>
+		<Row AgendaOne="AGENDA_HORN_CHEST_LOINS" AgendaTwo="AGENDA_PARANOID"/>
+		<Row AgendaOne="AGENDA_HORSE_LORD" AgendaTwo="AGENDA_PARANOID"/>
+	</ExclusiveAgendas>
+	<AgendaTraits>
+		<Row AgendaType="AGENDA_BILLIONAIRE" TraitType="TRAIT_AGENDA_BILLIONAIRE"/>
+		<Row AgendaType="AGENDA_CHEOMSEONGDAE" TraitType="TRAIT_AGENDA_CHEOMSEONGDAE"/>
+		<Row AgendaType="AGENDA_FLOWER_OF_SCOTLAND" TraitType="TRAIT_AGENDA_FLOWER_OF_SCOTLAND"/>
+		<Row AgendaType="AGENDA_HORN_CHEST_LOINS" TraitType="TRAIT_AGENDA_HORN_CHEST_LOINS"/>
+		<Row AgendaType="AGENDA_HORSE_LORD" TraitType="TRAIT_AGENDA_HORSE_LORD"/>
+		<Row AgendaType="AGENDA_IRON_CONFEDERACY" TraitType="TRAIT_AGENDA_IRON_CONFEDERACY"/>
+		<Row AgendaType="AGENDA_MAURYA_EMPIRE" TraitType="TRAIT_AGENDA_MAURYA_EMPIRE"/>
+		<Row AgendaType="AGENDA_NARIKALA_FORTRESS" TraitType="TRAIT_AGENDA_NARIKALA_FORTRESS"/>
+		<Row AgendaType="AGENDA_SPIRIT_OF_TUCAPEL" TraitType="TRAIT_AGENDA_SPIRIT_OF_TUCAPEL"/>
+		<Row AgendaType="AGENDA_CURMUDGEON" TraitType="TRAIT_AGENDA_CURMUDGEON"/>
+		<Row AgendaType="AGENDA_FLIRTATIOUS" TraitType="TRAIT_AGENDA_FLIRTATIOUS"/>
+		<Row AgendaType="AGENDA_GOSSIP" TraitType="TRAIT_AGENDA_GOSSIP"/>
+		<Row AgendaType="AGENDA_SYCOPHANT" TraitType="TRAIT_AGENDA_SYCOPHANT"/>
+		<Row AgendaType="AGENDA_SYMPATHIZER" TraitType="TRAIT_AGENDA_SYMPATHIZER"/>
+	</AgendaTraits>
+	<AiListTypes>
+		<Row ListType="IronConfederacyDiplomacy"/>
+		<Row ListType="MauryaEmpireDiplomacy"/>
+		<Row ListType="TamarFavorWalls"/>
+		<Row ListType="TucapelSettlingChanges"/>
+		<Row ListType="TucapelPseudoYields"/>
+		<Row ListType="WilhelminaPseudoYields"/>
+		<Row ListType="WilhelminaYields"/>
+		<!-- Random Agendas-->
+		<Row ListType="GossipFavoredDiplomacy"/>
+	</AiListTypes>
+	<AiLists>
+		<Row ListType="IronConfederacyDiplomacy" AgendaType="TRAIT_AGENDA_IRON_CONFEDERACY" System="DiplomaticActions"/>
+		<Row ListType="MauryaEmpireDiplomacy" AgendaType="TRAIT_AGENDA_MAURYA_EMPIRE" System="DiplomaticActions"/>
+		<Row ListType="TamarFavorWalls" AgendaType="TRAIT_AGENDA_NARIKALA_FORTRESS" System="Buildings"/>
+		<Row ListType="TucapelSettlingChanges" AgendaType="TRAIT_AGENDA_SPIRIT_OF_TUCAPEL" System="PlotEvaluations"/>
+		<Row ListType="TucapelPseudoYields" AgendaType="TRAIT_AGENDA_SPIRIT_OF_TUCAPEL" System="PseudoYields"/>
+		<Row ListType="WilhelminaPseudoYields" AgendaType="TRAIT_AGENDA_BILLIONAIRE" System="PseudoYields"/>
+		<Row ListType="WilhelminaYields" AgendaType="TRAIT_AGENDA_BILLIONAIRE" System="Yields"/>
+		<!-- Random Agendas-->
+		<Row ListType="GossipFavoredDiplomacy" AgendaType="TRAIT_AGENDA_GOSSIP" System="DiplomaticActions"/>
+	</AiLists>
+	<AiFavoredItems>
+		<Row ListType="IronConfederacyDiplomacy" Item="DIPLOACTION_ALLIANCE_RESEARCH" Favored="true"/>
+		<Row ListType="IronConfederacyDiplomacy" Item="DIPLOACTION_ALLIANCE_MILITARY" Favored="true"/>
+		<Row ListType="IronConfederacyDiplomacy" Item="DIPLOACTION_ALLIANCE_ECONOMIC" Favored="true"/>
+		<Row ListType="IronConfederacyDiplomacy" Item="DIPLOACTION_ALLIANCE_CULTURAL" Favored="true"/>
+		<Row ListType="IronConfederacyDiplomacy" Item="DIPLOACTION_ALLIANCE_RELIGIOUS" Favored="true"/>
+		<Row ListType="IronConfederacyDiplomacy" Item="DIPLOACTION_ALLIANCE_TEAMUP" Favored="true"/>
+		<Row ListType="IronConfederacyDiplomacy" Item="DIPLOACTION_DECLARE_SURPRISE_WAR" Favored="false"/>
+		<Row ListType="MauryaEmpireDiplomacy" Item="DIPLOACTION_DECLARE_TERRITORIAL_WAR" Favored="true"/>
+		<Row ListType="TamarFavorWalls" Item="BUILDING_WALLS" Favored="true"/>
+		<Row ListType="TamarFavorWalls" Item="BUILDING_CASTLE" Favored="true"/>
+		<Row ListType="TucapelSettlingChanges" Item="Nearest Friendly City" Favored="false" Value="-5"/>
+		<Row ListType="WilhelminaPseudoYields" Item="PSEUDOYIELD_UNIT_TRADE" Value="50"/>
+		<Row ListType="WilhelminaYields" Item="YIELD_GOLD" Value="25"/>
+		<!-- Random Agendas-->
+		<Row ListType="GossipFavoredDiplomacy" Item="DIPLOACTION_RESIDENT_EMBASSY" Favored="true"/>
+		<Row ListType="GossipFavoredDiplomacy" Item="DIPLOACTION_OPEN_BORDERS" Favored="true"/>
+		<Row ListType="GossipFavoredDiplomacy" Item="DIPLOACTION_DIPLOMATIC_DELEGATION" Favored="true"/>
+		<Row ListType="GossipFavoredDiplomacy" Item="DIPLOACTION_KEEP_PROMISE_DONT_SPY" Favored="false"/>
+	</AiFavoredItems>
+	<TraitModifiers>
+		<Row TraitType="TRAIT_AGENDA_BILLIONAIRE" ModifierId="AGENDA_BILLIONAIRE_TRADE"/>
+		<Row TraitType="TRAIT_AGENDA_CHEOMSEONGDAE" ModifierId="AGENDA_CHEOMSEONGDAE_HIGH_SCIENCE"/>
+		<Row TraitType="TRAIT_AGENDA_CHEOMSEONGDAE" ModifierId="AGENDA_CHEOMSEONGDAE_LOW_SCIENCE"/>
+		<Row TraitType="TRAIT_AGENDA_FLOWER_OF_SCOTLAND" ModifierId="AGENDA_FLOWER_OF_SCOTLAND_BAN_WARS"/>
+		<!-- Note: Behavior modifier, not a diplomatic one-->
+		<Row TraitType="TRAIT_AGENDA_FLOWER_OF_SCOTLAND" ModifierId="AGENDA_FLOWER_OF_SCOTLAND_WAR_NEIGHBORS"/>
+		<Row TraitType="TRAIT_AGENDA_FLOWER_OF_SCOTLAND" ModifierId="AGENDA_FLOWER_OF_SCOTLAND_PEACE_NEIGHBORS"/>
+		<Row TraitType="TRAIT_AGENDA_HORN_CHEST_LOINS" ModifierId="AGENDA_HORN_CHEST_LOINS"/>
+		<Row TraitType="TRAIT_AGENDA_HORSE_LORD" ModifierId="AGENDA_HORSE_LORD"/>
+		<Row TraitType="TRAIT_AGENDA_IRON_CONFEDERACY" ModifierId="AGENDA_IRON_CONFEDERACY_MANY_ALLIANCES"/>
+		<Row TraitType="TRAIT_AGENDA_IRON_CONFEDERACY" ModifierId="AGENDA_IRON_CONFEDERACY_FEW_ALLIANCES"/>
+		<Row TraitType="TRAIT_AGENDA_MAURYA_EMPIRE" ModifierId="AGENDA_MAURYA_EMPIRE_NEIGHBORS"/>
+		<Row TraitType="TRAIT_AGENDA_MAURYA_EMPIRE" ModifierId="AGENDA_MAURYA_EMPIRE_NOT_NEIGHBORS"/>
+		<Row TraitType="TRAIT_AGENDA_NARIKALA_FORTRESS" ModifierId="AGENDA_NARIKALA_FORTRESS_HIGH_WALLS"/>
+		<Row TraitType="TRAIT_AGENDA_NARIKALA_FORTRESS" ModifierId="AGENDA_NARIKALA_FORTRESS_LOW_WALLS"/>
+		<Row TraitType="TRAIT_AGENDA_SPIRIT_OF_TUCAPEL" ModifierId="AGENDA_SPIRIT_OF_TUCAPEL_GAINING_CITIES"/>
+		<Row TraitType="TRAIT_AGENDA_SPIRIT_OF_TUCAPEL" ModifierId="AGENDA_SPIRIT_OF_TUCAPEL_LOSING_CITIES"/>
+		<Row TraitType="TRAIT_AGENDA_CURMUDGEON" ModifierId="AGENDA_CURMUDGEON_POSITIVE"/>
+		<Row TraitType="TRAIT_AGENDA_CURMUDGEON" ModifierId="AGENDA_CURMUDGEON_NEGATIVE"/>
+		<Row TraitType="TRAIT_AGENDA_FLIRTATIOUS" ModifierId="AGENDA_FLIRTATIOUS_POSITIVE"/>
+		<Row TraitType="TRAIT_AGENDA_FLIRTATIOUS" ModifierId="AGENDA_FLIRTATIOUS_NEGATIVE"/>
+		<Row TraitType="TRAIT_AGENDA_GOSSIP" ModifierId="AGENDA_GOSSIP_POSITIVE"/>
+		<Row TraitType="TRAIT_AGENDA_GOSSIP" ModifierId="AGENDA_GOSSIP_NEGATIVE"/>
+		<Row TraitType="TRAIT_AGENDA_SYCOPHANT" ModifierId="AGENDA_SYCOPHANT_GOLDEN_AGE"/>
+		<Row TraitType="TRAIT_AGENDA_SYCOPHANT" ModifierId="AGENDA_SYCOPHANT_DARK_AGE"/>
+		<Row TraitType="TRAIT_AGENDA_SYMPATHIZER" ModifierId="AGENDA_SYMPATHIZER_GOLDEN_AGE"/>
+		<Row TraitType="TRAIT_AGENDA_SYMPATHIZER" ModifierId="AGENDA_SYMPATHIZER_DARK_AGE"/>
+	</TraitModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>AGENDA_BILLIONAIRE_TRADE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_TRADE_RELATIONS</ModifierType>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+			<SubjectRequirementSetId>PLAYER_IS_MAJOR_CIV_KNOWN_30_TURNS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CHEOMSEONGDAE_HIGH_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_HIGH_SCIENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CHEOMSEONGDAE_LOW_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LOW_SCIENCE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_BAN_WARS</ModifierId>
+			<ModifierType>MODIFIER_ADJUST_DIPLOMATIC_ACTION_PREFERENCE</ModifierType>
+			<SubjectRequirementSetId>PLAYERS_ARE_NEIGHBORS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_WAR_NEIGHBORS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_AT_WAR_WITH_NEIGHBORS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_PEACE_NEIGHBORS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_NOT_AT_WAR_WITH_NEIGHBORS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORN_CHEST_LOINS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_AGENDA_HORN_CHEST_LOINS</ModifierType>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+			<SubjectRequirementSetId>PLAYER_IS_MAJOR_CIV_KNOWN_10_TURNS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORSE_LORD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_AGENDA_HORSE_LORD</ModifierType>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+			<SubjectRequirementSetId>PLAYER_IS_MAJOR_CIV_KNOWN_10_TURNS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_MANY_ALLIANCES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_MANY_ALLIANCES</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_FEW_ALLIANCES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_FEW_ALLIANCES</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NEIGHBORS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYERS_ARE_NEIGHBORS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NOT_NEIGHBORS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYERS_ARE_NOT_NEIGHBORS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_NARIKALA_FORTRESS_HIGH_WALLS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_HIGH_WALLS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_NARIKALA_FORTRESS_LOW_WALLS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_LOW_WALLS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_GAINING_CITIES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_AGENDA_SPIRIT_OF_TUCAPEL</ModifierType>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+			<SubjectRequirementSetId>PLAYER_IS_MAJOR_CIV_KNOWN_10_TURNS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_LOSING_CITIES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_AGENDA_SPIRIT_OF_TUCAPEL</ModifierType>
+			<OwnerRequirementSetId>ON_TURN_STARTED</OwnerRequirementSetId>
+			<SubjectRequirementSetId>PLAYER_IS_MAJOR_CIV_KNOWN_10_TURNS</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CURMUDGEON_POSITIVE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SAME_SEX</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CURMUDGEON_NEGATIVE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_OPPOSITE_SEX</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLIRTATIOUS_POSITIVE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_OPPOSITE_SEX</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLIRTATIOUS_NEGATIVE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SAME_SEX</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_GOSSIP_POSITIVE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_SHARING_INFO</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_GOSSIP_NEGATIVE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_IS_NOT_SHARING_INFO</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYCOPHANT_GOLDEN_AGE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_GOLDEN_AGE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYCOPHANT_DARK_AGE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_DARK_AGE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYMPATHIZER_GOLDEN_AGE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_GOLDEN_AGE</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYMPATHIZER_DARK_AGE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_HAS_DARK_AGE</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>AGENDA_BILLIONAIRE_TRADE</ModifierId>
+			<Name>TradeBonus</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_BILLIONAIRE_TRADE</ModifierId>
+			<Name>NoTradePenalty</Name>
+			<Value>12</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_BILLIONAIRE_TRADE</ModifierId>
+			<Name>BonusPerRoute</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_BILLIONAIRE_TRADE</ModifierId>
+			<Name>OnlyInboundTrade</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_BILLIONAIRE_TRADE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_WILHELMINA_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_BILLIONAIRE_TRADE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_WILHELMINA_BILLIONAIRE_TRADE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CHEOMSEONGDAE_HIGH_SCIENCE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>8</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CHEOMSEONGDAE_HIGH_SCIENCE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_SEONDEOK_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CHEOMSEONGDAE_HIGH_SCIENCE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_CHEOMSEONGDAE_HIGH_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CHEOMSEONGDAE_LOW_SCIENCE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-8</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CHEOMSEONGDAE_LOW_SCIENCE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_SEONDEOK_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CHEOMSEONGDAE_LOW_SCIENCE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_CHEOMSEONGDAE_LOW_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_PEACE_NEIGHBORS</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_PEACE_NEIGHBORS</ModifierId>
+			<Name>MaxValue</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_PEACE_NEIGHBORS</ModifierId>
+			<Name>IncrementTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_PEACE_NEIGHBORS</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_ROBERT_THE_BRUCE_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_PEACE_NEIGHBORS</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_FLOWER_SCOTLAND_PEACEFUL</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_WAR_NEIGHBORS</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-2</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_WAR_NEIGHBORS</ModifierId>
+			<Name>MaxValue</Name>
+			<Value>-10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_WAR_NEIGHBORS</ModifierId>
+			<Name>IncrementTurns</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_WAR_NEIGHBORS</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_ROBERT_THE_BRUCE_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_WAR_NEIGHBORS</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_FLOWER_SCOTLAND_WARLIKE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_BAN_WARS</ModifierId>
+			<Name>Action</Name>
+			<Value>DIPLOACTION_DECLARE_SURPRISE_WAR, DIPLOACTION_DECLARE_FORMAL_WAR, DIPLOACTION_DECLARE_HOLY_WAR, DIPLOACTION_DECLARE_LIBERATION_WAR, DIPLOACTION_DECLARE_RECONQUEST_WAR, DIPLOACTION_DECLARE_PROTECTORATE_WAR, DIPLOACTION_DECLARE_COLONIAL_WAR, DIPLOACTION_DECLARE_TERRITORIAL_WAR</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLOWER_OF_SCOTLAND_BAN_WARS</ModifierId>
+			<Name>Favored</Name>
+			<Value>false</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORN_CHEST_LOINS</ModifierId>
+			<Name>StatementKey</Name>
+			<!-- Note: Value not actually used, just has to have something so we know this is a kudo/warning -->
+			<Value>AGENDA_HORN_CHEST_LOINS_WARNING</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORN_CHEST_LOINS</ModifierId>
+			<Name>TopPercentage</Name>
+			<Value>70</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORN_CHEST_LOINS</ModifierId>
+			<Name>BottomPercentage</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORN_CHEST_LOINS</ModifierId>
+			<Name>TopRankingDiploMod</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORN_CHEST_LOINS</ModifierId>
+			<Name>BottomRankingDiploMod</Name>
+			<Value>-7</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORN_CHEST_LOINS</ModifierId>
+			<Name>CantBuildDiploMod</Name>
+			<Value>-3</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORN_CHEST_LOINS</ModifierId>
+			<Name>CorpsPrereqCivic</Name>
+			<Value>CIVIC_NATIONALISM</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORSE_LORD</ModifierId>
+			<Name>StatementKey</Name>
+			<!-- Note: Value not actually used, just has to have something so we know this is a kudo/warning -->
+			<Value>AGENDA_HORSE_LORD_WARNING</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORSE_LORD</ModifierId>
+			<Name>TopPercentage</Name>
+			<Value>70</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORSE_LORD</ModifierId>
+			<Name>BottomPercentage</Name>
+			<Value>30</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORSE_LORD</ModifierId>
+			<Name>TopRankingDiploMod</Name>
+			<Value>-6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORSE_LORD</ModifierId>
+			<Name>BottomRankingDiploMod</Name>
+			<Value>7</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORSE_LORD</ModifierId>
+			<Name>PromotionClass1</Name>
+			<Value>PROMOTION_CLASS_HEAVY_CAVALRY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_HORSE_LORD</ModifierId>
+			<Name>PromotionClass2</Name>
+			<Value>PROMOTION_CLASS_LIGHT_CAVALRY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_FEW_ALLIANCES</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-8</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_FEW_ALLIANCES</ModifierId>
+			<Name>MaxValue</Name>
+			<Value>-8</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_FEW_ALLIANCES</ModifierId>
+			<Name>IncrementTurns</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_FEW_ALLIANCES</ModifierId>
+			<Name>IncrementValue</Name>
+			<Value>-8</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_FEW_ALLIANCES</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_ROBERT_THE_BRUCE_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_FEW_ALLIANCES</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_IRON_CONFEDERACY_FEW_ALLIANCES</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_MANY_ALLIANCES</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>8</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_MANY_ALLIANCES</ModifierId>
+			<Name>MaxValue</Name>
+			<Value>8</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_MANY_ALLIANCES</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>4</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_MANY_ALLIANCES</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>-8</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_MANY_ALLIANCES</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_ROBERT_THE_BRUCE_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_IRON_CONFEDERACY_MANY_ALLIANCES</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_IRON_CONFEDERACY_MANY_ALLIANCES</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NEIGHBORS</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-5</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NEIGHBORS</ModifierId>
+			<Name>MaxValue</Name>
+			<Value>-25</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NEIGHBORS</ModifierId>
+			<Name>IncrementValue</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NEIGHBORS</ModifierId>
+			<Name>IncrementTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NEIGHBORS</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_EXIT_LEADER_CHANDRAGUPTA_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NEIGHBORS</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_CHANDRAGUPTA_NEIGHBOR</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NOT_NEIGHBORS</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NOT_NEIGHBORS</ModifierId>
+			<Name>MaxValue</Name>
+			<Value>15</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NOT_NEIGHBORS</ModifierId>
+			<Name>IncrementValue</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NOT_NEIGHBORS</ModifierId>
+			<Name>IncrementTurns</Name>
+			<Value>5</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NOT_NEIGHBORS</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_EXIT_LEADER_CHANDRAGUPTA_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_MAURYA_EMPIRE_NOT_NEIGHBORS</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_CHANDRAGUPTA_NOT_NEIGHBOR</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_NARIKALA_FORTRESS_HIGH_WALLS</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>8</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_NARIKALA_FORTRESS_HIGH_WALLS</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_TAMAR_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_NARIKALA_FORTRESS_HIGH_WALLS</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_NARIKALA_FORTRESS_HIGH_WALLS</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_NARIKALA_FORTRESS_LOW_WALLS</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-8</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_NARIKALA_FORTRESS_LOW_WALLS</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_TAMAR_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_NARIKALA_FORTRESS_LOW_WALLS</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_NARIKALA_FORTRESS_LOW_WALLS</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_GAINING_CITIES</ModifierId>
+			<Name>CityGainUpperBound</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_GAINING_CITIES</ModifierId>
+			<Name>CityGainLowerBound</Name>
+			<Value>0</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_GAINING_CITIES</ModifierId>
+			<Name>ScorePerCity</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_GAINING_CITIES</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_LAUTARO_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_GAINING_CITIES</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_SPIRIT_OF_TUCAPEL_GAINING_CITIES</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_LOSING_CITIES</ModifierId>
+			<Name>CityGainUpperBound</Name>
+			<Value>0</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_LOSING_CITIES</ModifierId>
+			<Name>CityGainLowerBound</Name>
+			<Value>-3</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_LOSING_CITIES</ModifierId>
+			<Name>ScorePerCity</Name>
+			<Value>3</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_LOSING_CITIES</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_LAUTARO_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SPIRIT_OF_TUCAPEL_LOSING_CITIES</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_SPIRIT_OF_TUCAPEL_LOSING_CITIES</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CURMUDGEON_POSITIVE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CURMUDGEON_POSITIVE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_ANY_REASON_AGENDA_CURMUDGEON_POSITIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CURMUDGEON_POSITIVE</ModifierId>
+			<Name>HiddenAgenda</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CURMUDGEON_POSITIVE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_DESCRIPTION_CURMUDGEON_POSITIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CURMUDGEON_NEGATIVE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CURMUDGEON_NEGATIVE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_ANY_REASON_AGENDA_CURMUDGEON_NEGATIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CURMUDGEON_NEGATIVE</ModifierId>
+			<Name>HiddenAgenda</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_CURMUDGEON_NEGATIVE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_DESCRIPTION_CURMUDGEON_NEGATIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLIRTATIOUS_POSITIVE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLIRTATIOUS_POSITIVE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_ANY_REASON_AGENDA_FLIRTATIOUS_POSITIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLIRTATIOUS_POSITIVE</ModifierId>
+			<Name>HiddenAgenda</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLIRTATIOUS_POSITIVE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_DESCRIPTION_FLIRTATIOUS_POSITIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLIRTATIOUS_NEGATIVE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLIRTATIOUS_NEGATIVE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_ANY_REASON_AGENDA_FLIRTATIOUS_NEGATIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLIRTATIOUS_NEGATIVE</ModifierId>
+			<Name>HiddenAgenda</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FLIRTATIOUS_NEGATIVE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_DESCRIPTION_FLIRTATIOUS_NEGATIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_GOSSIP_POSITIVE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_GOSSIP_POSITIVE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_ANY_REASON_AGENDA_GOSSIP_POSITIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_GOSSIP_POSITIVE</ModifierId>
+			<Name>HiddenAgenda</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_GOSSIP_POSITIVE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_DESCRIPTION_GOSSIP_POSITIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_GOSSIP_NEGATIVE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_GOSSIP_NEGATIVE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_ANY_REASON_AGENDA_GOSSIP_NEGATIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_GOSSIP_NEGATIVE</ModifierId>
+			<Name>HiddenAgenda</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_GOSSIP_NEGATIVE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_DESCRIPTION_GOSSIP_NEGATIVE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYCOPHANT_GOLDEN_AGE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYCOPHANT_GOLDEN_AGE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_ANY_REASON_AGENDA_SYCOPHANT_GOLDEN_AGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYCOPHANT_GOLDEN_AGE</ModifierId>
+			<Name>HiddenAgenda</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYCOPHANT_GOLDEN_AGE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_DESCRIPTION_SYCOPHANT_GOLDEN_AGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYCOPHANT_DARK_AGE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYCOPHANT_DARK_AGE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_ANY_REASON_AGENDA_SYCOPHANT_DARK_AGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYCOPHANT_DARK_AGE</ModifierId>
+			<Name>HiddenAgenda</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYCOPHANT_DARK_AGE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_DESCRIPTION_SYCOPHANT_DARK_AGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYMPATHIZER_DARK_AGE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYMPATHIZER_DARK_AGE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_ANY_REASON_AGENDA_SYMPATHIZER_DARK_AGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYMPATHIZER_DARK_AGE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_DESCRIPTION_SYMPATHIZER_DARK_AGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYMPATHIZER_DARK_AGE</ModifierId>
+			<Name>HiddenAgenda</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYMPATHIZER_GOLDEN_AGE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-6</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYMPATHIZER_GOLDEN_AGE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_ANY_REASON_AGENDA_SYMPATHIZER_GOLDEN_AGE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYMPATHIZER_GOLDEN_AGE</ModifierId>
+			<Name>HiddenAgenda</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_SYMPATHIZER_GOLDEN_AGE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_DESCRIPTION_SYMPATHIZER_GOLDEN_AGE</Value>
+		</Row>
+	</ModifierArguments>
+	<ModifierStrings>
+		<Row ModifierId="AGENDA_BILLIONAIRE_TRADE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_CHEOMSEONGDAE_HIGH_SCIENCE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_CHEOMSEONGDAE_LOW_SCIENCE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_FLOWER_OF_SCOTLAND_PEACE_NEIGHBORS" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_FLOWER_OF_SCOTLAND_WAR_NEIGHBORS" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_HORN_CHEST_LOINS" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_HORSE_LORD" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_IRON_CONFEDERACY_FEW_ALLIANCES" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_IRON_CONFEDERACY_MANY_ALLIANCES" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_MAURYA_EMPIRE_NEIGHBORS" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_MAURYA_EMPIRE_NOT_NEIGHBORS" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_NARIKALA_FORTRESS_HIGH_WALLS" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_NARIKALA_FORTRESS_LOW_WALLS" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_SPIRIT_OF_TUCAPEL_GAINING_CITIES" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_SPIRIT_OF_TUCAPEL_LOSING_CITIES" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_CURMUDGEON_POSITIVE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_CURMUDGEON_NEGATIVE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_FLIRTATIOUS_POSITIVE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_FLIRTATIOUS_NEGATIVE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_GOSSIP_POSITIVE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_GOSSIP_NEGATIVE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_SYCOPHANT_GOLDEN_AGE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_SYCOPHANT_DARK_AGE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_SYMPATHIZER_GOLDEN_AGE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_SYMPATHIZER_DARK_AGE" Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+	</ModifierStrings>
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>PLAYERS_ARE_NEIGHBORS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYERS_ARE_NOT_NEIGHBORS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_AT_WAR_WITH_NEIGHBORS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_NOT_AT_WAR_WITH_NEIGHBORS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_HIGH_WALLS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_LOW_WALLS</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_MANY_ALLIANCES</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_FEW_ALLIANCES</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SAME_SEX</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_OPPOSITE_SEX</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SHARING_INFO</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_NOT_SHARING_INFO</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>PLAYERS_ARE_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_MAJOR_CIV_OPPONENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYERS_ARE_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_NEIGHBOR_CIVS</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYERS_ARE_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_MET_10_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYERS_ARE_NOT_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_MAJOR_CIV_OPPONENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYERS_ARE_NOT_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_NOT_NEIGHBOR_CIVS</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYERS_ARE_NOT_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_MET_10_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_AT_WAR_WITH_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_MAJOR_CIV_OPPONENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_AT_WAR_WITH_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_MET_10_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_AT_WAR_WITH_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_AT_WAR_WITH_NEIGHBORS</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_NOT_AT_WAR_WITH_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_MAJOR_CIV_OPPONENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_NOT_AT_WAR_WITH_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_MET_10_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_NOT_AT_WAR_WITH_NEIGHBORS</RequirementSetId>
+			<RequirementId>REQUIRES_NOT_AT_WAR_WITH_NEIGHBORS</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_HIGH_WALLS</RequirementSetId>
+			<RequirementId>REQUIRES_MAJOR_CIV_OPPONENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_HIGH_WALLS</RequirementSetId>
+			<RequirementId>REQUIRES_MET_10_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_HIGH_WALLS</RequirementSetId>
+			<RequirementId>REQUIRES_HAS_HIGH_WALLS</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_LOW_WALLS</RequirementSetId>
+			<RequirementId>REQUIRES_MAJOR_CIV_OPPONENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_LOW_WALLS</RequirementSetId>
+			<RequirementId>REQUIRES_MET_10_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_LOW_WALLS</RequirementSetId>
+			<RequirementId>REQUIRES_HAS_LOW_WALLS</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_MANY_ALLIANCES</RequirementSetId>
+			<RequirementId>REQUIRES_HAS_MANY_ALLIANCES</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_MANY_ALLIANCES</RequirementSetId>
+			<RequirementId>REQUIRES_MAJOR_CIV_OPPONENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_MANY_ALLIANCES</RequirementSetId>
+			<RequirementId>REQUIRES_MET_10_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_FEW_ALLIANCES</RequirementSetId>
+			<RequirementId>REQUIRES_HAS_FEW_ALLIANCES</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_FEW_ALLIANCES</RequirementSetId>
+			<RequirementId>REQUIRES_MAJOR_CIV_OPPONENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_HAS_FEW_ALLIANCES</RequirementSetId>
+			<RequirementId>REQUIRES_MET_10_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SAME_SEX</RequirementSetId>
+			<RequirementId>REQUIRES_SAME_SEX</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SAME_SEX</RequirementSetId>
+			<RequirementId>REQUIRES_MET_30_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_OPPOSITE_SEX</RequirementSetId>
+			<RequirementId>REQUIRES_OPPOSITE_SEX</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_OPPOSITE_SEX</RequirementSetId>
+			<RequirementId>REQUIRES_MET_30_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SHARING_INFO</RequirementSetId>
+			<RequirementId>REQUIRES_SHARING_INFO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_SHARING_INFO</RequirementSetId>
+			<RequirementId>REQUIRES_MET_30_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_NOT_SHARING_INFO</RequirementSetId>
+			<RequirementId>REQUIRES_NOT_SHARING_INFO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>PLAYER_IS_NOT_SHARING_INFO</RequirementSetId>
+			<RequirementId>REQUIRES_MET_30_TURNS_AGO</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
+	<Requirements>
+		<Row>
+			<RequirementId>REQUIRES_NEIGHBOR_CIVS</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_IS_NEIGHBOR</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_NOT_NEIGHBOR_CIVS</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_IS_NEIGHBOR</RequirementType>
+			<Inverse>true</Inverse>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_AT_WAR_WITH_NEIGHBORS</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_AT_WAR_WITH_NEIGHBOR</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_NOT_AT_WAR_WITH_NEIGHBORS</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_AT_WAR_WITH_NEIGHBOR</RequirementType>
+			<Inverse>true</Inverse>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_HAS_HIGH_WALLS</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_AVERAGE_WALL_LEVEL_THRESHOLD</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_HAS_LOW_WALLS</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_AVERAGE_WALL_LEVEL_THRESHOLD</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_HAS_MANY_ALLIANCES</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_HAS_MANY_ALLIANCES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_HAS_FEW_ALLIANCES</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_HAS_MANY_ALLIANCES</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_SAME_SEX</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_IS_SAME_SEX</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_OPPOSITE_SEX</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_IS_SAME_SEX</RequirementType>
+			<Inverse>true</Inverse>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_SHARING_INFO</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_IS_SHARING_INFO</RequirementType>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_NOT_SHARING_INFO</RequirementId>
+			<RequirementType>REQUIREMENT_PLAYER_IS_SHARING_INFO</RequirementType>
+		</Row>
+	</Requirements>
+	<RequirementArguments>
+		<Row>
+			<RequirementId>REQUIRES_HAS_HIGH_WALLS</RequirementId>
+			<Name>AverageWallLevelThreshold</Name>
+			<Value>1.0</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_HAS_HIGH_WALLS</RequirementId>
+			<Name>AboveThreshold</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_HAS_LOW_WALLS</RequirementId>
+			<Name>AverageWallLevelThreshold</Name>
+			<Value>0.5</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_HAS_LOW_WALLS</RequirementId>
+			<Name>AboveThreshold</Name>
+			<Value>false</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_HAS_MANY_ALLIANCES</RequirementId>
+			<Name>MinOwnerAlliances</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_HAS_FEW_ALLIANCES</RequirementId>
+			<Name>MinOwnerAlliances</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_HAS_FEW_ALLIANCES</RequirementId>
+			<Name>ChecKForFewer</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_SHARING_INFO</RequirementId>
+			<Name>SharingInfoWell</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<RequirementId>REQUIRES_NOT_SHARING_INFO</RequirementId>
+			<Name>SharingInfoWell</Name>
+			<Value>false</Value>
+		</Row>
+	</RequirementArguments>
+</GameInfo>
