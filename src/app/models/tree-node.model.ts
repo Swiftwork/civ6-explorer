@@ -8,6 +8,17 @@ import { Policy } from './civics/policy.model';
 import { Unit } from './civics/unit.model';
 import { Wonder } from './civics/wonder.model';
 
+export enum Era {
+  ERA_ANCIENT,
+  ERA_CLASSICAL,
+  ERA_MEDIEVAL,
+  ERA_RENAISSANCE,
+  ERA_INDUSTRIAL,
+  ERA_MODERN,
+  ERA_ATOMIC,
+  ERA_INFORMATION,
+}
+
 export class TreeNode {
   constructor(
     public CivicType: string,
@@ -15,7 +26,7 @@ export class TreeNode {
     public Description: string,
     public Cost: number,
     public AdvisorType: string,
-    public EraType: string,
+    public EraType: Era,
     public UITreeRow: number,
     public Prereq?: string[],
     public Boost?: string,
