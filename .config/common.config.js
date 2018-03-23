@@ -76,7 +76,7 @@ module.exports = {
         loader: 'html-loader',
       },
       {
-        test: /\.(png|jpe?g|gif|svg|woff2?|ttf|eot|ico)$/,
+        test: /\.(png|jpe?g|gif|svg|woff2?|ttf|eot|ico|xml)$/,
         loader: 'file-loader',
         options: {
           name: 'assets/[name].[ext]?[hash]',
