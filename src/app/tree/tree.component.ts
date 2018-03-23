@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 import { Civics } from '../data/civics';
 import { Era, TreeNode } from '../models/tree-node.model';
@@ -11,10 +11,14 @@ import { XmlReader } from '../services/xmlreader';
 })
 export class TreeComponent implements OnInit {
 
+  @ViewChild('treeRef') treeRef: ElementRef;
+
   public nodes: TreeNode[] = Civics;
   public jsonCivics: TreeNode[];
 
-  private rows = 9;
+  private treeRows = 8;
+  private treeHeight = 0;
+  private rowHeight = 0;
 
   public exampleCivic: TreeNode = new TreeNode('CIVIC_CODE_OF_LAWS', 'LOC_CIVIC_CODE_OF_LAWS_NAME', '', 20, 'ADVISOR_GENERIC', Era.ERA_ANCIENT, 0, [], '');
 
@@ -67,7 +71,16 @@ export class TreeComponent implements OnInit {
     }
   }
 
+  ngAfterViewInit() {
+    this.treeHeight = this.treeRef.nativeElement.clientHeight;
+    this.rowHeight = this.treeHeight / this.treeRows;
+    console.log(this.treeHeight);
+  }
+
   public layout(row: number, cost: number, era: Era) {
+    let x = 0;
+    let y = this.rowHeight * row;
+    return `translate(${x}, ${y})`;
   }
 
 }
