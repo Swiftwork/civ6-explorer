@@ -5,6 +5,7 @@ import { Http, HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { Router, RouterModule } from '@angular/router';
 
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { APP_ROUTES, APP_ROUTING_PROVIDERS } from './app.routing';
 import { TreeModule } from './tree/tree.module';
@@ -15,6 +16,7 @@ import { TreeModule } from './tree/tree.module';
     /* @ANGULAR */
     BrowserModule,
     HttpModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
 
