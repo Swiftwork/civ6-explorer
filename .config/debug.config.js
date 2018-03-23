@@ -9,7 +9,6 @@ const webpack = require('webpack');
 // after https://github.com/webpack/webpack/issues/3460 will be resolved.
 const CheckerPlugin = require('awesome-typescript-loader').CheckerPlugin;
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const LiveReloadPlugin = require('webpack-livereload-plugin');
 const { CommonsChunkPlugin } = require('webpack').optimize;
 const { LoaderOptionsPlugin, EnvironmentPlugin, HotModuleReplacementPlugin, NamedModulesPlugin, SourceMapDevToolPlugin } = require('webpack');
 const { NamedLazyChunksWebpackPlugin } = require('@angular/cli/plugins/webpack');
@@ -25,8 +24,8 @@ const commonConfig = require('./common.config.js');
 module.exports = merge.smart(commonConfig, {
 
   output: {
-    filename: "[name].bundle.js",
-    chunkFilename: "[id].chunk.js",
+    filename: '[name].bundle.js',
+    chunkFilename: '[id].chunk.js',
   },
 
   module: {
@@ -89,7 +88,7 @@ module.exports = merge.smart(commonConfig, {
       },
     }),
     new EnvironmentPlugin({
-      NODE_ENV: "development"
+      NODE_ENV: 'development'
     }),
   ],
 

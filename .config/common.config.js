@@ -19,7 +19,7 @@ function loadVariables() { return require(postcssVariablesPath); }
 function loadMedia() { return require(postcssMediaPath); }
 function loadMixins() { return require(postcssMixinsPath); }
 
-const chunkOrder = ['inline', 'ie-polyfill', 'polyfill', 'vendor', 'main'];
+const chunkOrder = ['inline', 'polyfill', 'vendor', 'main'];
 
 const isDevServer = process.argv.find(v => v.includes('webpack-dev-server'));
 
@@ -45,7 +45,6 @@ module.exports = {
   context: path.resolve(process.cwd(), 'src'),
 
   entry: {
-    'ie-polyfill': './ie-polyfill.ts',
     'polyfill': './polyfill.ts',
     'main': './main.ts',
   },

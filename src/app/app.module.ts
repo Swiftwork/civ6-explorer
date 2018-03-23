@@ -3,7 +3,6 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Http, HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Router, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -15,7 +14,6 @@ import { TreeModule } from './tree/tree.module';
   imports: [
     /* @ANGULAR */
     BrowserModule,
-    BrowserAnimationsModule,
     HttpModule,
     FormsModule,
     ReactiveFormsModule,
