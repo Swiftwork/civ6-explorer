@@ -10,15 +10,15 @@ import { Wonder } from './civics/wonder.model';
 
 export class TreeNode {
   constructor(
-    CivicType: string,
-    Name: string,
-    Description: string,
-    Cost: number,
-    AdvisorType: string,
-    EraType: string,
-    UITreeRow: number,
-    Prereq?: string[],
-    Boost?: string,
-    Repeatable?: boolean,
+    public CivicType: string,
+    public Name: string,
+    public Description: string,
+    public Cost: number,
+    public AdvisorType: string,
+    public EraType: string,
+    public UITreeRow: number,
+    public Prereq?: string[],
+    public Boost?: string,
+    public Repeatable?: boolean,
   ) { }
 }
