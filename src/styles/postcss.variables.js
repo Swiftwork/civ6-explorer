@@ -1,6 +1,4 @@
-const variables = require('@evry/ng-styles/dist/postcss.variables.js');
-
-module.exports = Object.assign({}, variables, {
+module.exports.variables = () => ({
 
   /* == COLORS == */
   c_alpha: '#0079b5', /* Brand Blue */

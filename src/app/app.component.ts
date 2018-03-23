@@ -3,11 +3,7 @@ import { Component, HostBinding, HostListener } from '@angular/core';
 import { NavigationEnd, NavigationStart, Route, Router, RouterOutlet, Routes, UrlSegment, UrlSegmentGroup } from '@angular/router';
 import { Subscription } from 'rxjs';
 
-import { IRouteAlias, RouterX } from '@evry/ng-core';
-
 import { APP_ROUTE_ANIMATIONS } from './app.routing';
-
-declare let routingAliasData: IRouteAlias;
 
 @Component({
   selector: 'div#root',
@@ -31,13 +27,6 @@ export class AppComponent {
         this.routerState = event.url.substring(1).replace('/', '-');
       }
     });
-
-    /* Preloaded routing alias */
-    if (typeof routingAliasData !== 'undefined') {
-      this.router.resetConfig(RouterX.AddRouteAlias(this.router.config, routingAliasData));
-      routingAliasData = null;
-      document.body.removeChild(document.getElementById('data-routing-alias'));
-    }
   }
 
   /* @TODO ADDED BUT NEEDS TO BE LOOKED AT */

@@ -5,16 +5,6 @@ import { Http, HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Router, RouterModule } from '@angular/router';
-import { NgComponentsModule } from '@evry/ng-components';
-import {
-  DtmService,
-  EpiViewDataResolver,
-  EpiViewDataService,
-  Logger,
-  NgCoreModule,
-  ViewDataResolver,
-  ViewDataService,
-} from '@evry/ng-core';
 
 import { AppComponent } from './app.component';
 import { APP_ROUTES, APP_ROUTING_PROVIDERS } from './app.routing';
@@ -29,10 +19,6 @@ import { TreeModule } from './tree/tree.module';
     HttpModule,
     FormsModule,
     ReactiveFormsModule,
-
-    /* @EVRY */
-    NgCoreModule.forRoot(),
-    NgComponentsModule.forRoot(),
 
     /* FÖRETAGARE */
     RouterModule.forRoot(APP_ROUTES),
