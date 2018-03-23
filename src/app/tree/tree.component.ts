@@ -22,7 +22,11 @@ export class TreeComponent implements OnInit {
   constructor(private xmlReader: XmlReader) { }
 
   ngOnInit() {
-    this.xmlReader.read();
+    let civicsJson;
+    this.xmlReader.read('/assets/data/BaseGame/Civics.xml').subscribe((data) => {
+      civicsJson = data;
+    });
+    console.log('civics', civicsJson);
   }
 
   ngAfterViewInit() {
