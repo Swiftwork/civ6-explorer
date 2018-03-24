@@ -21,7 +21,7 @@ export enum Era {
 
 export class TreeNode {
   constructor(
-    public civic: string,
+    public type: string,
     public name: string,
     public description: string,
     public cost: number,

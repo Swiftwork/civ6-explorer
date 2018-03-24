@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Era, TreeNode } from '../models/tree-node.model';
-import { ICivicPrereqs, ICivicPrereqsRow, ICivicRow, ICivicsJson } from '../models/xml/civics';
+import { ICivicPrereqs, ICivicPrereqsRow, ICivicRow, ICivics } from '../models/xml/civics';
 import { XmlReader } from './xmlreader';
 
 @Injectable()
@@ -16,7 +16,7 @@ export class CivicParser {
   }
 
   public loadCivics() {
-    this.xmlReader.read('/assets/data/BaseGame/Civics.xml').subscribe((data: ICivicsJson) => {
+    this.xmlReader.read('/assets/data/BaseGame/Civics.xml').subscribe((data: ICivics) => {
       console.log('civics from json', data);
       for (let i = 0; i < data.GameInfo.Civics.Row.length; i++) {
         let civicrow = data.GameInfo.Civics.Row[i].$ as ICivicRow;

@@ -3,6 +3,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Civics } from '../data/civics';
 import { Era, TreeNode } from '../models/tree-node.model';
 import { CivicParser } from '../services/civicparser';
+import { TechnologiesParser } from '../services/technologiesparser';
 
 @Component({
   selector: 'x-tree',
@@ -14,16 +15,20 @@ export class TreeComponent implements OnInit {
   @ViewChild('treeRef') treeRef: ElementRef;
 
   public nodes: TreeNode[] = Civics;
-  public jsonCivics: TreeNode[] = [];
+  public civics: TreeNode[] = [];
+  public technologies: TreeNode[] = [];
 
   private treeRows = 8;
   private treeHeight = 0;
   private rowHeight = 0;
 
-  constructor(private civicparser: CivicParser) { }
+  constructor(
+    private civicparser: CivicParser,
+    private technologiesparser: TechnologiesParser) { }
 
   ngOnInit() {
-    this.jsonCivics = this.civicparser.Civics;
+    this.civics = this.civicparser.Civics;
+    this.technologies = this.technologiesparser.Technologies;
   }
 
   ngAfterViewInit() {
