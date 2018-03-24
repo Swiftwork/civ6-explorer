@@ -4,6 +4,7 @@ import { Civics } from '../data/civics';
 import { Era, TreeNode } from '../models/tree-node.model';
 import { CivicParser } from '../services/civicparser';
 import { TechnologiesParser } from '../services/technologiesparser';
+import { LocaleParser } from '../services/locale-parser';
 
 @Component({
   selector: 'x-tree',
@@ -36,7 +37,9 @@ export class TreeComponent implements OnInit {
 
   constructor(
     private civicParser: CivicParser,
-    private technologiesParser: TechnologiesParser) { }
+    private technologiesParser: TechnologiesParser,
+    private localeParser: LocaleParser,
+  ) { }
 
   ngOnInit() {
     this.eras = Object.keys(Era).filter(key => isNaN(parseInt(key, 10)));
@@ -48,6 +51,10 @@ export class TreeComponent implements OnInit {
         this.eraGap * this.eras.length;
       this.treeHeight = this.treeRows * (this.nodeHeight + 12);
     });
+    this.localeParser.locale.subscribe((locale) => {
+      console.log(locale);
+    });
+    //this.technologies = this.technologiesParser.Technologies;
     //this.technologies = this.technologiesParser.Technologies;
   }
 
