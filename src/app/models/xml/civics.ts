@@ -1,4 +1,6 @@
-export interface ICivicsJson {
+import { INodeRow, IRow } from './shared';
+
+export interface ICivics {
   GameInfo: {
     Boosts: IRow,
     CivicModifiers: IRow,
@@ -16,13 +18,8 @@ export interface ICivicsJson {
   }
 }
 
-export interface ICivicRow {
-  AdvisorType: string,
+export interface ICivicRow extends INodeRow {
   CivicType: string,
-  Cost: string,
-  EraType: string,
-  Name: string,
-  UITreeRow: string,
 }
 
 export interface ICivicPrereqs {
@@ -32,8 +29,4 @@ export interface ICivicPrereqs {
 export interface ICivicPrereqsRow {
   Civic: string,
   PrereqCivic: string,
-}
-
-export interface IRow {
-  Row: any[],
 }

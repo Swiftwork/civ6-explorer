@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { CivicParser } from '../services/civicparser';
+import { TechnologiesParser } from '../services/technologiesparser';
 import { XmlReader } from '../services/xmlreader';
 import { TreeComponent } from './tree.component';
 
@@ -9,6 +11,8 @@ const DECLARATION: any[] = [
 
 const PROVIDERS: any[] = [
   XmlReader,
+  CivicParser,
+  TechnologiesParser,
 ];
 
 @NgModule({
