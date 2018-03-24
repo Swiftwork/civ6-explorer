@@ -32,7 +32,7 @@ export class TreeComponent implements OnInit {
   public nodeHeight = 96;
   public nodeHGap = 96;
   public nodeVGap = 12;
-  public prereqRadius = 24;
+  public prereqRadius = 12;
 
   constructor(
     private civicParser: CivicParser,

@@ -8,10 +8,12 @@
   [attr.height]="treeHeight">
   <g class="eras"
     *ngFor="let eraName of eras; let era = index;">
+
     <text class="era-divider"
       [attr.x]="0"
       [attr.y]="(eraGap) / - 2 + 32"
       [attr.transform]="layoutEra(era)">{{eraName}}</text>
+
     <ng-container *ngFor="let row of eraGrids[eraName].rows">
       <ng-container *ngFor="let node of row">
         <g class="node"
