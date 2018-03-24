@@ -21,7 +21,7 @@ export enum Era {
 }
 
 export class TreeNode {
-  public column = -1;
+  public column = 0;
 
   constructor(
     public type: string,
@@ -32,7 +32,7 @@ export class TreeNode {
     public era: Era,
     public row: number,
     public prereq: string[] = [],
-    public boost?: IBoostRow,
+    public boost = '',
     public repeatable = false,
   ) { }
 }

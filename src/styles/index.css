@@ -1,4 +1,5 @@
 body {
-  padding: 2vr;
-  background: papayawhip;
+  font-family: var(--f_stack);
+  padding: 1vr;
+  background: #f0eeec;
 }

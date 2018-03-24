@@ -3,18 +3,52 @@
 </header>
 
 <svg #treeRef
-  class="tree">
-  <g class="node"
-    [attr.transform]="layout(node.row, node.column, node.era)"
-    *ngFor="let node of nodes">
-    <rect x="0"
-      y="0"
-      width="256"
-      height="48"></rect>
-    <text x="12"
-      y="32"
-      font-family="Verdana"
-      font-size="24"
-      fill="black">{{node.name}}</text>
+  class="tree"
+  [attr.width]="treeWidth"
+  [attr.height]="treeHeight">
+  <g class="eras"
+    *ngFor="let eraName of eras; let era = index;">
+    <text class="era-divider"
+      [attr.x]="0"
+      [attr.y]="(eraGap) / - 2 + 32"
+      [attr.transform]="layoutEra(era)">{{eraName}}</text>
+    <ng-container *ngFor="let row of eraGrids[eraName].rows">
+      <ng-container *ngFor="let node of row">
+        <g class="node"
+          [attr.transform]="layout(node.row, node.column + eraGrids[eraName].priorColumns, node.era)"
+          *ngIf="node">
+
+          <path class="prereq"
+            [attr.d]="path"
+            *ngFor="let path of layoutPrereq(node)"></path>
+
+          <rect class="backdrop"
+            x="0"
+            y="0"
+            [attr.width]="nodeWidth"
+            [attr.height]="nodeHeight"></rect>
+
+          <rect class="icon"
+            [attr.x]="nodeWidth - nodeHeight"
+            y="0"
+            [attr.width]="nodeHeight"
+            [attr.height]="nodeHeight"></rect>
+
+          <text class="name"
+            x="12"
+            y="24">{{node.name}}</text>
+
+          <text class="boost"
+            x="12"
+            y="48">{{node.boost}}</text>
+
+          <text class="cost"
+            [attr.x]="nodeWidth - 12"
+            y="32"
+            text-anchor="end"
+            fill="black">{{node.cost}}</text>
+        </g>
+      </ng-container>
+    </ng-container>
   </g>
 </svg>

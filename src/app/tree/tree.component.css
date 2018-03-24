@@ -1,13 +1,36 @@
-.tree {
-  width: 100%;
-  height: 480px;
+:host {
+  display: block;
   overflow-x: auto;
-}
 
-.node {
-  rect {
-    fill: burlywood;
-    stroke: darkgoldenrod;
-    filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.2));
+  .era-divider {
+    fill: rgba(0, 0, 0, 0.3);
+    font-size: 3.2rem;
+  }
+
+  .node {
+    .prereq {
+      fill: none;
+      stroke: var(--c_civic);
+      stroke-width: 4px;
+      stroke-dasharray: 12px 8px;
+    }
+
+    .name {
+      fill: #404040;
+    }
+
+    .icon {
+      fill: var(--c_civic);
+    }
+
+    .cost {
+      fill: white;
+      font-size: 2rem;
+    }
+
+    .backdrop {
+      fill: white;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
   }
 }

@@ -17,52 +17,91 @@ export class TreeComponent implements OnInit {
 
   @ViewChild('treeRef') treeRef: ElementRef;
 
-  public nodes: TreeNode[] = Civics;
+  public nodes: TreeNode[] = [];
   public civics: TreeNode[] = [];
   public technologies: TreeNode[] = [];
 
-  protected eras = {};
+  protected eras: string[] = [];
+  protected eraGrids = {};
 
-  protected treeRows = 8;
-  protected treeHeight = 0;
-  protected rowHeight = 0;
-  protected nodeWidth = 256;
+  public treeRows = TreeComponent.CIVIC_ROWS;
+  public treeWidth = 1920;
+  public treeHeight = 480;
+  public eraGap = 240;
+  public nodeWidth = 480;
+  public nodeHeight = 96;
+  public nodeHGap = 96;
+  public nodeVGap = 12;
+  public prereqRadius = 24;
 
   constructor(
-    private civicparser: CivicParser,
-    private technologiesparser: TechnologiesParser) { }
+    private civicParser: CivicParser,
+    private technologiesParser: TechnologiesParser) { }
 
   ngOnInit() {
-    this.civics = this.civicparser.Civics;
-    this.technologies = this.technologiesparser.Technologies;
-  }
-
-  ngAfterViewInit() {
-    this.treeHeight = this.treeRef.nativeElement.clientHeight;
-    this.rowHeight = this.treeHeight / this.treeRows;
+    this.eras = Object.keys(Era).filter(key => isNaN(parseInt(key, 10)));
+    this.civicParser.civics.subscribe(civics => {
+      this.civicEraGrids(civics);
+      const lastEra = this.eraGrids[this.eras[this.eras.length - 1]];
+      this.treeWidth = (lastEra.priorColumns + lastEra.columnCount) *
+        (this.nodeWidth + this.nodeHGap) +
+        this.eraGap * this.eras.length;
+      this.treeHeight = this.treeRows * (this.nodeHeight + 12);
+    });
+    //this.technologies = this.technologiesParser.Technologies;
   }
 
   public layout(row: number, column: number, era: Era) {
-    let x = this.nodeWidth * column;
-    let y = this.rowHeight * row;
+    let x = this.columnToPixel(column, era + 1);
+    let y = this.rowToPixel(row);
     return `translate(${x}, ${y})`;
   }
 
-  public generateCivicColumns(nodes: TreeNode[]) {
+  public layoutEra(era: Era) {
+    let x = this.columnToPixel(this.eraGrids[Era[era]].priorColumns, era);
+    let y = 0;
+    return `translate(${x}, ${y}) rotate(90, 0, ${0})`;
+  }
+
+  public layoutPrereq(node: TreeNode) {
+    const prereqNodes = this.nodes.filter((stored) => node.prereq.includes(stored.type));
+    const paths = prereqNodes.map(prereq => {
+      const grid = this.eraGrids[Era[prereq.era]];
+      const columnDelta = grid.columnCount - prereq.column - 1 + node.column;
+      const prereqY = this.rowToPixel(prereq.row) - this.rowToPixel(node.row);
+      const prereqX = prereq.era !== node.era ? this.columnToPixel(columnDelta, 1) : 0;
+      return this.roundedCorners([
+        - this.nodeHGap - prereqX,
+        prereqY + this.nodeHeight / 2,
+        - this.nodeHGap / 2,
+        prereqY + this.nodeHeight / 2,
+        - this.nodeHGap / 2,
+        this.nodeHeight / 2,
+        0,
+        this.nodeHeight / 2,
+      ]);
+    });
+    return paths;
+  }
+
+  public civicEraGrids(nodes: TreeNode[]) {
     // Split eras into separate objects
-    let eraGrids: any = {};
-    Object.keys(Era).filter(key => isNaN(parseInt(key, 10))).forEach(key => (eraGrids[key] = {
+    this.nodes = nodes;
+    this.eraGrids = {};
+    this.eras.forEach(key => (this.eraGrids[key] = {
       rows: new Array(TreeComponent.CIVIC_ROWS).fill(undefined).map(() => []),
       sorted: { columns: [] },
+      columnCount: 0,
+      priorColumns: 0,
     }));
 
     // Assign node to correct era
-    nodes.forEach(node => eraGrids[Era[node.era]].sorted.columns.push(node));
+    nodes.forEach(node => this.eraGrids[Era[node.era]].sorted.columns.push(node));
 
+    let previousEra;
     // Sort nodes based on pre-requisites
-    for (const era in eraGrids) {
-      const grid = eraGrids[era];
-      this.eras[era] = {};
+    for (const era in this.eraGrids) {
+      const grid = this.eraGrids[era];
 
       // Too few to sort
       if (grid.sorted.columns.length <= 1) continue;
@@ -81,7 +120,7 @@ export class TreeComponent implements OnInit {
               for (let y = 0; y < TreeComponent.CIVIC_ROWS; y++) {
                 const potential = grid.rows[y][x];
                 if (!potential) continue;
-                if (potential !== requisite) continue;
+                if (potential.type !== requisite) continue;
                 pos = x + 1;
                 isMatch = true;
                 break;
@@ -94,12 +133,50 @@ export class TreeComponent implements OnInit {
           });
         }
 
-        grid.rows[node.row][pos] = node.type;
+        grid.rows[node.row][pos] = node;
         node.column = pos;
-        if (this.eras[era].columnCount < pos)
-          this.eras[era].columnCount = pos;
+
+        if (this.eraGrids[era].columnCount < pos + 1)
+          this.eraGrids[era].columnCount = pos + 1;
+        if (previousEra)
+          this.eraGrids[era].priorColumns = this.eraGrids[previousEra].priorColumns + this.eraGrids[previousEra].columnCount;
       }
+      previousEra = era;
     }
   }
 
+  /* HELPERS */
+
+  public roundedCorners(points: number[]) {
+    const r = this.prereqRadius;
+    let deltaY = points[5] - points[3];
+    let sweep = deltaY > 0 ? 1 : -1;
+    let path = `M${points[0]} ${points[1]} `;
+    path += `H${points[2] - r} `;
+    if (deltaY !== 0) {
+      path += this.arcPath(sweep, 1);
+      path += `V${points[5] - (deltaY > 0 ? r : -r)} `;
+    } else {
+      path += `h${r} `;
+    }
+    sweep = deltaY > 0 ? -1 : 1;
+    if (deltaY !== 0) path += this.arcPath(sweep, -1);
+    else path += `h${r} `;
+
+    path += `H${points[6]} `;
+    return path;
+  }
+
+  public arcPath(sweep: number, invert: number) {
+    const r = this.prereqRadius;
+    return `a${r} ${r} 0 0 ${sweep > 0 ? 1 : 0} ${r} ${sweep > 0 ? r * invert : -r * invert} `;
+  }
+
+  public columnToPixel(column: number, era: Era) {
+    return (this.nodeWidth + this.nodeHGap) * column + this.eraGap * era;
+  }
+
+  public rowToPixel(row: number) {
+    return (this.nodeHeight + this.nodeVGap) * row;
+  }
 }

@@ -1,6 +1,7 @@
 
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import { Observable } from 'rxjs/Observable';
 import { Era, TreeNode } from '../models/tree-node.model';
 import { ICivicPrereqs, ICivicPrereqsRow, ICivicRow, ICivics } from '../models/xml/civics';
@@ -10,7 +11,8 @@ import { XmlReader } from './xmlreader';
 @Injectable()
 export class CivicParser {
 
-  public Civics: TreeNode[] = [];
+  protected _civics = new BehaviorSubject<TreeNode[]>([]);
+  public civics = this._civics.asObservable();
 
   constructor(private xmlReader: XmlReader) {
     this.loadCivics();
@@ -18,12 +20,12 @@ export class CivicParser {
 
   public loadCivics() {
     this.xmlReader.read('/assets/data/BaseGame/Civics.xml').subscribe((data: ICivics) => {
-      console.log('civics from json', data);
+      const civics = [];
       for (let i = 0; i < data.GameInfo.Civics.Row.length; i++) {
         let civicrow = data.GameInfo.Civics.Row[i].$ as ICivicRow;
-        this.Civics.push(new TreeNode(
+        civics.push(new TreeNode(
           civicrow.CivicType,
-          civicrow.Name, //ToDo: Update to proper value
+          civicrow.Name.slice(4), //ToDo: Update to proper value
           'Description', //ToDo: Find
           +civicrow.Cost,
           civicrow.AdvisorType, //ToDo: Update to proper value
@@ -34,14 +36,14 @@ export class CivicParser {
           false, //ToDo: Find
         ));
       }
-      console.log('civics parsed', this.Civics);
+      this._civics.next(civics);
     });
   }
 
-  private getBoost(civic: string, boosts: any[]): IBoostRow {
+  private getBoost(civic: string, boosts: any[]): string {
     for (let i = 0; i < boosts.length; i++) {
       let boostRow = boosts[i].$ as IBoostRow;
-      if (boostRow.CivicType === civic) return boostRow;
+      if (boostRow.CivicType === civic) return boostRow.TriggerDescription;
     }
     return null;
   }
@@ -55,8 +57,8 @@ export class CivicParser {
     return civicPrereqs;
   }
 
-  private getEraType(eratype: string): Era {
-    switch (eratype) {
+  private getEraType(era: string): Era {
+    switch (era) {
       case 'ERA_INFORMATION':
         return Era.ERA_INFORMATION;
       case 'ERA_ATOMIC':
