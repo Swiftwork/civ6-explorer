@@ -22,15 +22,15 @@ export class CivicParser {
         let civicrow = data.GameInfo.Civics.Row[i].$ as ICivicRow;
         this.Civics.push(new TreeNode(
           civicrow.CivicType,
-          civicrow.Name,
-          'Description',
+          civicrow.Name, //ToDo: Update to proper value
+          'Description', //ToDo: Find
           +civicrow.Cost,
-          civicrow.AdvisorType,
+          civicrow.AdvisorType, //ToDo: Update to proper value
           this.getEraType(civicrow.EraType),
-          +civicrow.UITreeRow + 3,
+          +civicrow.UITreeRow + 3, //ToDo: Modify to match renderer
           this.getPreReqs(civicrow.CivicType, data.GameInfo.CivicPrereqs.Row),
-          'Boost',
-          false,
+          'Boost', //ToDo: Find
+          false, //ToDo: Find
         ));
       }
       console.log('civics parsed', this.Civics);
