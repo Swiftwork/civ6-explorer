@@ -12,12 +12,15 @@ import { XmlReader } from '../services/xmlreader';
 })
 export class TreeComponent implements OnInit {
 
+  static CIVIC_ROWS = 7;
+  static TECH_ROWS = 8;
+
   @ViewChild('treeRef') treeRef: ElementRef;
 
   public nodes: TreeNode[] = Civics;
   public jsonCivics: TreeNode[] = [];
 
-  protected columns: Map<number, TreeNode[]> = new Map<number, TreeNode[]>();
+  protected eras = {};
 
   protected treeRows = 8;
   protected treeHeight = 0;
@@ -28,7 +31,7 @@ export class TreeComponent implements OnInit {
 
   ngOnInit() {
     this.xmlReader.read('/assets/data/BaseGame/Civics.xml').subscribe((data: ICivicsJson) => {
-      console.log('civics from json', data);
+      //console.log('civics from json', data);
 
       for (let i = 0; i < data.GameInfo.Civics.Row.length; i++) {
         let civicrow = data.GameInfo.Civics.Row[i].$ as ICivicRow;
@@ -46,10 +49,10 @@ export class TreeComponent implements OnInit {
           false,
         ));
       }
-      console.log('civics parsed', this.jsonCivics);
-    });
 
-    this.updateColumns(this.nodes);
+      this.generateCivicColumns(this.jsonCivics);
+      //console.log('civics parsed', this.jsonCivics);
+    });
   }
 
   private getPreReqs(civic: string, prereqs: any[]): string[] {
@@ -76,7 +79,7 @@ export class TreeComponent implements OnInit {
       case 'ERA_MEDIEVAL':
         return Era.ERA_MEDIEVAL;
       case 'ERA_CLASSICAL':
-        return Era.ERA_ANCIENT;
+        return Era.ERA_CLASSICAL;
       case 'ERA_ANCIENT':
       default:
         return Era.ERA_ANCIENT;
@@ -86,22 +89,66 @@ export class TreeComponent implements OnInit {
   ngAfterViewInit() {
     this.treeHeight = this.treeRef.nativeElement.clientHeight;
     this.rowHeight = this.treeHeight / this.treeRows;
-    console.log(this.treeHeight);
   }
 
-  updateColumns(nodes: TreeNode[]) {
-    nodes.forEach((node) => {
-      let column = this.columns.get(node.cost) || [];
-      column.push(node);
-      this.columns.set(node.cost, column);
-    });
-    console.log(this.columns);
-  }
-
-  public layout(row: number, cost: number, era: Era) {
-    let x = this.nodeWidth;
-    let y = this.rowHeight * (row + 3);
+  public layout(row: number, column: number, era: Era) {
+    let x = this.nodeWidth * column;
+    let y = this.rowHeight * row;
     return `translate(${x}, ${y})`;
+  }
+
+  public generateCivicColumns(nodes: TreeNode[]) {
+    // Split eras into separate objects
+    let eraGrids: any = {};
+    Object.keys(Era).filter(key => isNaN(parseInt(key, 10))).forEach(key => (eraGrids[key] = {
+      rows: new Array(TreeComponent.CIVIC_ROWS).fill(undefined).map(() => []),
+      sorted: { columns: [] },
+    }));
+
+    // Assign node to correct era
+    nodes.forEach(node => eraGrids[Era[node.era]].sorted.columns.push(node));
+
+    // Sort nodes based on pre-requisites
+    for (const era in eraGrids) {
+      const grid = eraGrids[era];
+      this.eras[era] = {};
+
+      // Too few to sort
+      if (grid.sorted.columns.length <= 1) continue;
+      // Sort by checking if next node requires current node then retain order else move current back
+      grid.sorted.columns.sort((a: TreeNode, b: TreeNode) => b.prereq.includes(a.type) ? 0 : 1);
+
+      const maxColumns = grid.sorted.columns.length;
+      while (grid.sorted.columns.length > 0) {
+        const node = grid.sorted.columns.shift();
+        let pos = 0;
+
+        if (node.prereq && node.prereq.length) {
+          node.prereq.forEach((requisite: string) => {
+            let isMatch = false;
+            for (let x = pos; x < maxColumns; x++) {
+              for (let y = 0; y < TreeComponent.CIVIC_ROWS; y++) {
+                const potential = grid.rows[y][x];
+                if (!potential) continue;
+                if (potential !== requisite) continue;
+                pos = x + 1;
+                isMatch = true;
+                break;
+              }
+              if (isMatch) {
+                while (grid.rows[node.row][pos]) pos++;
+                break;
+              }
+            }
+          });
+        }
+
+        grid.rows[node.row][pos] = node.type;
+        node.column = pos;
+        if (this.eras[era].columnCount < pos)
+          this.eras[era].columnCount = pos;
+      }
+    }
   }
 
 }

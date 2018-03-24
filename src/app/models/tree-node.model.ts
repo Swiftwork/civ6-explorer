@@ -20,16 +20,18 @@ export enum Era {
 }
 
 export class TreeNode {
+  public column = -1;
+
   constructor(
-    public civic: string,
+    public type: string,
     public name: string,
     public description: string,
     public cost: number,
     public advisor: string,
     public era: Era,
     public row: number,
-    public prereq?: string[],
-    public boost?: string,
-    public repeatable?: boolean,
+    public prereq: string[] = [],
+    public boost = '',
+    public repeatable = false,
   ) { }
 }
