@@ -7,6 +7,7 @@ import { Governor } from './civics/governor.model';
 import { Policy } from './civics/policy.model';
 import { Unit } from './civics/unit.model';
 import { Wonder } from './civics/wonder.model';
+import { IBoostRow } from './xml/shared';
 
 export enum Era {
   ERA_ANCIENT,
@@ -29,7 +30,7 @@ export class TreeNode {
     public era: Era,
     public row: number,
     public prereq?: string[],
-    public boost?: string,
+    public boost?: IBoostRow,
     public repeatable?: boolean,
   ) { }
 }

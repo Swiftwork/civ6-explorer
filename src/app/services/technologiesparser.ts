@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Era, TreeNode } from '../models/tree-node.model';
+import { IBoostRow } from '../models/xml/shared';
 import { ITechnologies, ITechnologyPrereqsRow, ITechnologyRow } from '../models/xml/technologies';
 import { XmlReader } from './xmlreader';
 
@@ -29,12 +30,20 @@ export class TechnologiesParser {
           this.getEraType(technologyrow.EraType),
           +technologyrow.UITreeRow + 3, //ToDo: Modify to match renderer
           this.getPreReqs(technologyrow.TechnologyType, data.GameInfo.TechnologyPrereqs.Row),
-          'Boost', //ToDo: Find
+          this.getBoost(technologyrow.TechnologyType, data.GameInfo.Boosts.Row),
           false, //ToDo: Find
         ));
       }
       console.log('tech parsed', this.Technologies);
     });
+  }
+
+  private getBoost(tech: string, boosts: any[]): IBoostRow {
+    for (let i = 0; i < boosts.length; i++) {
+      let boostRow = boosts[i].$ as IBoostRow;
+      if (boostRow.TechnologyType === tech) return boostRow;
+    }
+    return null;
   }
 
   private getPreReqs(tech: string, prereqs: any[]): string[] {
@@ -61,7 +70,7 @@ export class TechnologiesParser {
       case 'ERA_MEDIEVAL':
         return Era.ERA_MEDIEVAL;
       case 'ERA_CLASSICAL':
-        return Era.ERA_ANCIENT;
+        return Era.ERA_CLASSICAL;
       case 'ERA_ANCIENT':
       default:
         return Era.ERA_ANCIENT;

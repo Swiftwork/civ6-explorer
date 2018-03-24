@@ -33,3 +33,20 @@ export interface INodeRow {
   Name: string,
   UITreeRow: string,
 }
+
+export interface IBoostRow {
+  Boost: string,
+  BoostClass: string,
+  BoostingCivicType: string, //Ta bort?
+  BoostingTechType: string, //Ta bort?
+  CivicType: string, //Ta bort?
+  DistrictType: string,
+  ImprovementType: string,
+  NumItems: string,
+  RequiresResource: string,
+  ResourceType: string,
+  TechnologyType: string, //Ta bort?
+  TriggerDescription: string,
+  TriggerLongDescription: string,
+  Unit1Type: string,
+}

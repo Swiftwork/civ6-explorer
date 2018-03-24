@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Era, TreeNode } from '../models/tree-node.model';
 import { ICivicPrereqs, ICivicPrereqsRow, ICivicRow, ICivics } from '../models/xml/civics';
+import { IBoostRow } from '../models/xml/shared';
 import { XmlReader } from './xmlreader';
 
 @Injectable()
@@ -29,12 +30,20 @@ export class CivicParser {
           this.getEraType(civicrow.EraType),
           +civicrow.UITreeRow + 3, //ToDo: Modify to match renderer
           this.getPreReqs(civicrow.CivicType, data.GameInfo.CivicPrereqs.Row),
-          'Boost', //ToDo: Find
+          this.getBoost(civicrow.CivicType, data.GameInfo.Boosts.Row),
           false, //ToDo: Find
         ));
       }
       console.log('civics parsed', this.Civics);
     });
+  }
+
+  private getBoost(civic: string, boosts: any[]): IBoostRow {
+    for (let i = 0; i < boosts.length; i++) {
+      let boostRow = boosts[i].$ as IBoostRow;
+      if (boostRow.CivicType === civic) return boostRow;
+    }
+    return null;
   }
 
   private getPreReqs(civic: string, prereqs: any[]): string[] {
@@ -61,7 +70,7 @@ export class CivicParser {
       case 'ERA_MEDIEVAL':
         return Era.ERA_MEDIEVAL;
       case 'ERA_CLASSICAL':
-        return Era.ERA_ANCIENT;
+        return Era.ERA_CLASSICAL;
       case 'ERA_ANCIENT':
       default:
         return Era.ERA_ANCIENT;
