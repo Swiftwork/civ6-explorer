@@ -3,8 +3,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Civics } from '../data/civics';
 import { Era, TreeNode } from '../models/tree-node.model';
 import { CivicParser } from '../services/civicparser';
-import { TechnologiesParser } from '../services/technologiesparser';
 import { LocaleParser } from '../services/locale-parser';
+import { TechnologiesParser } from '../services/technologiesparser';
 
 @Component({
   selector: 'x-tree',
@@ -51,10 +51,6 @@ export class TreeComponent implements OnInit {
         this.eraGap * this.eras.length;
       this.treeHeight = this.treeRows * (this.nodeHeight + 12);
     });
-    this.localeParser.locale.subscribe((locale) => {
-      console.log(locale);
-    });
-    //this.technologies = this.technologiesParser.Technologies;
     //this.technologies = this.technologiesParser.Technologies;
   }
 

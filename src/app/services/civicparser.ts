@@ -19,13 +19,13 @@ export class CivicParser {
   }
 
   public loadCivics() {
-    this.xmlReader.read('/assets/data/BaseGame/Civics.xml').subscribe((data: ICivics) => {
+    this.xmlReader.read('/assets/game/BaseGame/Civics.xml').subscribe((data: ICivics) => {
       const civics = [];
       for (let i = 0; i < data.GameInfo.Civics.Row.length; i++) {
         let civicrow = data.GameInfo.Civics.Row[i].$ as ICivicRow;
         civics.push(new TreeNode(
           civicrow.CivicType,
-          civicrow.Name.slice(4), //ToDo: Update to proper value
+          civicrow.Name, //ToDo: Update to proper value
           'Description', //ToDo: Find
           +civicrow.Cost,
           civicrow.AdvisorType, //ToDo: Update to proper value
