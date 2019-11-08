@@ -3,8 +3,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Civics } from '../data/civics';
 import { Era, TreeNode } from '../models/tree-node.model';
 import { CivicParser } from '../services/civicparser';
-import { TechnologiesParser } from '../services/technologiesparser';
 import { LocaleParser } from '../services/locale-parser';
+import { TechnologiesParser } from '../services/technologiesparser';
 
 @Component({
   selector: 'x-tree',
@@ -33,7 +33,7 @@ export class TreeComponent implements OnInit {
   public nodeHeight = 96;
   public nodeHGap = 96;
   public nodeVGap = 12;
-  public prereqRadius = 12;
+  public prereqRadius = 32;
 
   constructor(
     private civicParser: CivicParser,
