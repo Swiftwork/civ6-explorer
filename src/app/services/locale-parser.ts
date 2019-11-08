@@ -10,23 +10,23 @@ import { XmlReader } from './xmlreader';
 @Injectable()
 export class LocaleParser {
 
-  protected _locale = new BehaviorSubject<Map<string, string>>(new Map());
-  public locale = this._locale.asObservable();
+  protected _locale = new Map<string, string>();
 
   constructor(private xmlReader: XmlReader) {
-    this.loadLocale('en_US', 'Civics_Text');
   }
 
   public loadLocale(locale = 'en_US', group?: string) {
-    this.xmlReader.read(`/assets/data/BaseGame/Locale/${locale}/${group}.xml`).subscribe((data: any) => {
-      const locale = new Map();
+    return this.xmlReader.read(`/assets/game/BaseGame/Locale/${locale}/${group}.xml`).map((data: any) => {
       for (let i = 0; i < data.GameData.BaseGameText.Row.length; i++) {
-        locale.set(
+        this._locale.set(
           data.GameData.BaseGameText.Row[i].$.Tag,
           data.GameData.BaseGameText.Row[i].Text,
         );
       }
-      this._locale.next(locale);
-    });
+    }).toPromise();
+  }
+
+  public translate(key: string): string {
+    return this._locale.get(key) || 'missing translation';
   }
 }

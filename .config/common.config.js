@@ -130,7 +130,8 @@ module.exports = {
       xhtml: true,
     }),
     new CopyWebpackPlugin([
-      { from: 'assets/data/**' },
+      { from: 'assets/game/**' },
+      { from: 'assets/locale/**' },
     ]),
     new CommonsChunkPlugin({
       name: [

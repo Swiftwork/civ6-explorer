@@ -19,7 +19,7 @@ export class TechnologiesParser {
   }
 
   public loadTechnologies() {
-    this.xmlReader.read('/assets/data/BaseGame/Technologies.xml').subscribe((data: ITechnologies) => {
+    this.xmlReader.read('/assets/game/BaseGame/Technologies.xml').subscribe((data: ITechnologies) => {
       const technologies = [];
       for (let i = 0; i < data.GameInfo.Technologies.Row.length; i++) {
         let technologyRow = data.GameInfo.Technologies.Row[i].$ as ITechnologyRow;

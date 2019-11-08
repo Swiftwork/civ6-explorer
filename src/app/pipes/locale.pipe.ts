@@ -9,7 +9,7 @@ export class LocalePipe implements PipeTransform {
     private localeParser: LocaleParser,
   ) { }
 
-  transform(value: any): any {
-    return null;
+  transform(key: string): string {
+    return this.localeParser.translate(key);
   }
 }

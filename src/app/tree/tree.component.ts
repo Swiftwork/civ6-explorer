@@ -51,10 +51,6 @@ export class TreeComponent implements OnInit {
         this.eraGap * this.eras.length;
       this.treeHeight = this.treeRows * (this.nodeHeight + 12);
     });
-    this.localeParser.locale.subscribe((locale) => {
-      console.log(locale);
-    });
-    //this.technologies = this.technologiesParser.Technologies;
     //this.technologies = this.technologiesParser.Technologies;
   }
 
